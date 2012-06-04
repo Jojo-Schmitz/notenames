@@ -48,58 +48,60 @@ function run()
       if (typeof curScore === 'undefined')
             return;
       var cursor   = new Cursor(curScore);
-      cursor.staff = 0;
-      cursor.voice = 0;
-      cursor.rewind();  // set cursor to first chord/rest
+      for (var staff = 0; staff < curScore.staves; ++staff) {
+            cursor.staff = staff;
+            cursor.voice = 0;
+            cursor.rewind();  // set cursor to first chord/rest
 
-      while (!cursor.eos()) {
-            if (cursor.isChord()) {
-                  var text  = new Text(curScore);
-                  switch (cursor.chord().topNote().tpc) {
-			case -1: text.text = qsTr("Fbb"); break;
-			case 0:  text.text = qsTr("Cbb"); break;
-			case 1:  text.text = qsTr("Gbb"); break;
-			case 2:  text.text = qsTr("Dbb"); break;
-			case 3:  text.text = qsTr("Abb"); break;
-			case 4:  text.text = qsTr("Ebb"); break;
-			case 5:  text.text = qsTr("Bbb"); break;
-			case 6:  text.text = qsTr("Fb");  break;
-			case 7:  text.text = qsTr("Cb");  break;
+            while (!cursor.eos()) {
+                  if (cursor.isChord()) {
+                        var text  = new Text(curScore);
+                        switch (cursor.chord().topNote().tpc) {
+			      case -1: text.text = qsTr("Fbb"); break;
+			      case 0:  text.text = qsTr("Cbb"); break;
+			      case 1:  text.text = qsTr("Gbb"); break;
+			      case 2:  text.text = qsTr("Dbb"); break;
+			      case 3:  text.text = qsTr("Abb"); break;
+			      case 4:  text.text = qsTr("Ebb"); break;
+			      case 5:  text.text = qsTr("Bbb"); break;
+			      case 6:  text.text = qsTr("Fb");  break;
+			      case 7:  text.text = qsTr("Cb");  break;
 
-			case 8:  text.text = qsTr("Gb");  break;
-			case 9:  text.text = qsTr("Db");  break;
-			case 10: text.text = qsTr("Ab");  break;
-			case 11: text.text = qsTr("Eb");  break;
-			case 12: text.text = qsTr("Bb");  break;
-			case 13: text.text = qsTr("F");   break;
-			case 14: text.text = qsTr("C");   break;
-			case 15: text.text = qsTr("G");   break;
-			case 16: text.text = qsTr("D");   break;
-			case 17: text.text = qsTr("A");   break;
-			case 18: text.text = qsTr("E");   break;
-			case 19: text.text = qsTr("B");   break;
+			      case 8:  text.text = qsTr("Gb");  break;
+			      case 9:  text.text = qsTr("Db");  break;
+			      case 10: text.text = qsTr("Ab");  break;
+			      case 11: text.text = qsTr("Eb");  break;
+			      case 12: text.text = qsTr("Bb");  break;
+			      case 13: text.text = qsTr("F");   break;
+			      case 14: text.text = qsTr("C");   break;
+			      case 15: text.text = qsTr("G");   break;
+			      case 16: text.text = qsTr("D");   break;
+			      case 17: text.text = qsTr("A");   break;
+			      case 18: text.text = qsTr("E");   break;
+			      case 19: text.text = qsTr("B");   break;
 
-			case 20: text.text = qsTr("F#");  break;
-			case 21: text.text = qsTr("C#");  break;
-			case 22: text.text = qsTr("G#");  break;
-			case 23: text.text = qsTr("D#");  break;
-			case 24: text.text = qsTr("A#");  break;
-			case 25: text.text = qsTr("E#");  break;
-			case 26: text.text = qsTr("B#");  break;
-			case 27: text.text = qsTr("F##"); break;
-			case 28: text.text = qsTr("C##"); break;
-			case 29: text.text = qsTr("G##"); break;
-			case 30: text.text = qsTr("D##"); break;
-			case 31: text.text = qsTr("A##"); break;
-			case 32: text.text = qsTr("E##"); break;
-			case 33: text.text = qsTr("B##"); break;
-			default: text.text = qsTr("?");   break;
-		  	}
+			      case 20: text.text = qsTr("F#");  break;
+			      case 21: text.text = qsTr("C#");  break;
+			      case 22: text.text = qsTr("G#");  break;
+			      case 23: text.text = qsTr("D#");  break;
+			      case 24: text.text = qsTr("A#");  break;
+			      case 25: text.text = qsTr("E#");  break;
+			      case 26: text.text = qsTr("B#");  break;
+			      case 27: text.text = qsTr("F##"); break;
+			      case 28: text.text = qsTr("C##"); break;
+			      case 29: text.text = qsTr("G##"); break;
+			      case 30: text.text = qsTr("D##"); break;
+			      case 31: text.text = qsTr("A##"); break;
+			      case 32: text.text = qsTr("E##"); break;
+			      case 33: text.text = qsTr("B##"); break;
+			      default: text.text = qsTr("?");   break;
+		  	      }
 
-                  text.yOffset = -4;
-                  cursor.putStaffText(text);
+                        text.yOffset = -4;
+                        cursor.putStaffText(text);
+                        }
+                  cursor.next();
                   }
-            cursor.next();
             }
       }
 
