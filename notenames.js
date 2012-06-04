@@ -55,7 +55,22 @@ function run()
       while (!cursor.eos()) {
             if (cursor.isChord()) {
                   var text  = new Text(curScore);
-                  text.text = cursor.chord().topNote().name;
+                  switch (cursor.chord().topNote().name) {
+			case "C":  text.text = qsTr("C");  break;
+			case "Db": text.text = qsTr("Db"); break;
+			case "D":  text.text = qsTr("D");  break;
+			case "Eb": text.text = qsTr("Eb"); break;
+			case "E":  text.text = qsTr("E");  break;
+			case "F":  text.text = qsTr("F");  break;
+			case "Gb": text.text = qsTr("Gb"); break;
+			case "G":  text.text = qsTr("G");  break;
+			case "Ab": text.text = qsTr("Ab"); break;
+			case "A":  text.text = qsTr("A");  break;
+			case "Bb": text.text = qsTr("Bb"); break;
+			case "B":  text.text = qsTr("B");  break;
+			default:   text.text = "?";        break;
+		  	}
+
                   text.yOffset = -5;
                   cursor.putStaffText(text);
                   }
@@ -69,7 +84,7 @@ function run()
 //---------------------------------------------------------
 
 var mscorePlugin = {
-      menu: 'Plugins.Note Names',
+      menu: 'Plugins.' + qsTr("Note Names"),
       init: init,
       run:  run
       };
