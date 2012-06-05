@@ -36,47 +36,47 @@
     <message>
         <location filename="../notenames.js" line="59"/>
         <source>Fbb</source>
-        <translation type="unfinished"></translation>
+        <translation>Feses</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="60"/>
         <source>Cbb</source>
-        <translation type="unfinished"></translation>
+        <translation>Ceses</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="61"/>
         <source>Gbb</source>
-        <translation type="unfinished"></translation>
+        <translation>Geses</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="62"/>
         <source>Dbb</source>
-        <translation type="unfinished"></translation>
+        <translation>Deses</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="63"/>
         <source>Abb</source>
-        <translation type="unfinished"></translation>
+        <translation>Ases</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="64"/>
         <source>Ebb</source>
-        <translation type="unfinished"></translation>
+        <translation>Eses</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="65"/>
         <source>Bbb</source>
-        <translation type="unfinished"></translation>
+        <translation>Heses</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="66"/>
         <source>Fb</source>
-        <translation type="unfinished"></translation>
+        <translation>Fes</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="67"/>
         <source>Cb</source>
-        <translation type="unfinished"></translation>
+        <translation>Ces</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="69"/>
@@ -137,47 +137,47 @@
     <message>
         <location filename="../notenames.js" line="87"/>
         <source>E#</source>
-        <translation type="unfinished"></translation>
+        <translation>Eis</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="88"/>
         <source>B#</source>
-        <translation type="unfinished"></translation>
+        <translation>His</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="89"/>
         <source>F##</source>
-        <translation type="unfinished"></translation>
+        <translation>Fisis</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="90"/>
         <source>C##</source>
-        <translation type="unfinished"></translation>
+        <translation>Cisis</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="91"/>
         <source>G##</source>
-        <translation type="unfinished"></translation>
+        <translation>Gisis</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="92"/>
         <source>D##</source>
-        <translation type="unfinished"></translation>
+        <translation>Disis</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="93"/>
         <source>A##</source>
-        <translation type="unfinished"></translation>
+        <translation>Aisis</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="94"/>
         <source>E##</source>
-        <translation type="unfinished"></translation>
+        <translation>Eisis</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="95"/>
         <source>B##</source>
-        <translation type="unfinished"></translation>
+        <translation>Hisis</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="96"/>

@@ -11,7 +11,7 @@
     <message>
         <location filename="../notenames.js" line="70"/>
         <source>Db</source>
-        <translation>D flat</translation>
+        <translation>D♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="77"/>
@@ -21,7 +21,7 @@
     <message>
         <location filename="../notenames.js" line="72"/>
         <source>Eb</source>
-        <translation>E flat</translation>
+        <translation>E♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="79"/>
@@ -36,52 +36,59 @@
     <message>
         <location filename="../notenames.js" line="59"/>
         <source>Fbb</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>Apparently there is no double b in Unicode</translatorcomment>
+        <translation>F♭♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="60"/>
         <source>Cbb</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>Apparently there is no double b in Unicode</translatorcomment>
+        <translation>C♭♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="61"/>
         <source>Gbb</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>Apparently there is no double b in Unicode</translatorcomment>
+        <translation>G♭♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="62"/>
         <source>Dbb</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>Apparently there is no double b in Unicode</translatorcomment>
+        <translation>D♭♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="63"/>
         <source>Abb</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>Apparently there is no double b in Unicode</translatorcomment>
+        <translation>A♭♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="64"/>
         <source>Ebb</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>Apparently there is no double b in Unicode</translatorcomment>
+        <translation>E♭♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="65"/>
         <source>Bbb</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>Apparently there is no double b in Unicode</translatorcomment>
+        <translation>B♭♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="66"/>
         <source>Fb</source>
-        <translation type="unfinished"></translation>
+        <translation>F♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="67"/>
         <source>Cb</source>
-        <translation type="unfinished"></translation>
+        <translation>C♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="69"/>
         <source>Gb</source>
-        <translation>G flat</translation>
+        <translation>G♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="76"/>
@@ -91,7 +98,7 @@
     <message>
         <location filename="../notenames.js" line="71"/>
         <source>Ab</source>
-        <translation>A flat</translation>
+        <translation>A♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="78"/>
@@ -101,7 +108,7 @@
     <message>
         <location filename="../notenames.js" line="73"/>
         <source>Bb</source>
-        <translation>B flat</translation>
+        <translation>B♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="80"/>
@@ -111,77 +118,84 @@
     <message>
         <location filename="../notenames.js" line="82"/>
         <source>F#</source>
-        <translation>F sharp</translation>
+        <translation>F♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="83"/>
         <source>C#</source>
-        <translation>C sharp</translation>
+        <translation>C♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="84"/>
         <source>G#</source>
-        <translation>G sharp</translation>
+        <translation>G♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="85"/>
         <source>D#</source>
-        <translation>D sharp</translation>
+        <translation>D♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="86"/>
         <source>A#</source>
-        <translation>A sharp</translation>
+        <translation>A♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="87"/>
         <source>E#</source>
-        <translation type="unfinished"></translation>
+        <translation>E♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="88"/>
         <source>B#</source>
-        <translation type="unfinished"></translation>
+        <translation>F♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="89"/>
         <source>F##</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>double # in Unicode is at U+1D12A, &quot;𝄪&quot;</translatorcomment>
+        <translation>F♯♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="90"/>
         <source>C##</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>double # in Unicode is at U+1D12A, &quot;𝄪&quot;</translatorcomment>
+        <translation>C♯♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="91"/>
         <source>G##</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>double # in Unicode is at U+1D12A, &quot;𝄪&quot;</translatorcomment>
+        <translation>G♯♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="92"/>
         <source>D##</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>double # in Unicode is at U+1D12A, &quot;𝄪&quot;</translatorcomment>
+        <translation>D♯♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="93"/>
         <source>A##</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>double # in Unicode is at U+1D12A, &quot;𝄪&quot;</translatorcomment>
+        <translation>A♯♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="94"/>
         <source>E##</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>double # in Unicode is at U+1D12A, &quot;𝄪&quot;</translatorcomment>
+        <translation>E♯♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="95"/>
         <source>B##</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>double # in Unicode is at U+1D12A, &quot;𝄪&quot;</translatorcomment>
+        <translation>B♯♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="96"/>
         <source>?</source>
-        <translation type="unfinished"></translation>
+        <translation>?</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="112"/>
