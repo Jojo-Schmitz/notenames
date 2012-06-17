@@ -4,7 +4,7 @@ As a further extensions it also names notes with sharps, double sharps and doubl
 
 Available locales: English, German, Dutch, Japanese, Italian, French, Spanish, Portuguese, Russian, Romainan, Danish, Norwegian, Swedish, Polish, Slovak, Czech and Greek.
 
-The double sharp and double flat notes as well as Fb, Cb, E# and B# still need translation for Japanese, Italian, French, Spanish, Portuguese, Russian, Romainan and Greek, help is more than welcome.
+The double sharp and double flat notes as well as Fb, Cb, E# and B# still need translation into Japanese, Italian, French, Spanish, Portuguese, Russian, Romanian and Greek, help is more than welcome.
 
 If you also want it to show courtesy- and microtonal accidentals, change 'false' to 'true' in line 104. Note however, that none of these have yet been translated, and their 'clear text' names can be rather long (e.g. "mirrored-flat-slash").
 
