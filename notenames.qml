@@ -118,10 +118,10 @@ MuseScore {
                   } // end switch userAccidental
                } // end if courtesy- and microtonal accidentals
 
-               text.yOffset = -4;
-               if (cursor.elements.notes[0].pitch > 83)
-                  text.xOffset = 1;
-                     cursor.add(text);
+               //text.yOffset = -4;
+               //if (cursor.elements.notes[0].pitch > 83)
+                  //text.xOffset = 1;
+               cursor.add(text);
             } // end if CHORD
             cursor.next();
          } // end while segment
