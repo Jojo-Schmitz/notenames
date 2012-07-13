@@ -28,7 +28,7 @@ MuseScore {
 
    onRun: {
       if (typeof curScore === 'undefined')
-         return;
+         Qt.quit();
 
       var cursor = curScore.newCursor();
 
@@ -38,7 +38,7 @@ MuseScore {
          cursor.rewind(0);  // set cursor to first chord/rest
 
          while (cursor.segment) {
-            if (cursor.element.type == MScore.CHORD) {
+            if (cursor.element && cursor.element.type == MScore.CHORD) {
                var text  = newElement(MScore.STAFF_TEXT);
 
                switch (cursor.element.notes[0].tpc) {
