@@ -24,6 +24,8 @@ import QtQuick 1.0
 import MuseScore 1.0
 
 MuseScore {
+   version: "1.0"
+   description: "This plugin names notes as per your language settings"
    menuPath: "Plugins." + qsTr("Note Names")
 
    onRun: {
