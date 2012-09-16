@@ -40,8 +40,8 @@ MuseScore {
          cursor.rewind(0);  // set cursor to first chord/rest
 
          while (cursor.segment) {
-            if (cursor.element && cursor.element.type == MScore.CHORD) {
-               var text  = newElement(MScore.STAFF_TEXT);
+            if (cursor.element && cursor.element.type == Element.CHORD) {
+               var text  = newElement(Element.STAFF_TEXT);
 
                switch (cursor.element.notes[0].tpc) {
                   case -1: text.text = qsTr("Fbb"); break;
