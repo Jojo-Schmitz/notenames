@@ -43,55 +43,55 @@
         <location filename="../notenames.js" line="60"/>
         <location filename="../notenames.qml" line="45"/>
         <source>Fbb</source>
-        <translation type="unfinished"></translation>
+        <translation>Fa doppio bemolle</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="61"/>
         <location filename="../notenames.qml" line="46"/>
         <source>Cbb</source>
-        <translation type="unfinished"></translation>
+        <translation>Do doppio bemolle</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="62"/>
         <location filename="../notenames.qml" line="47"/>
         <source>Gbb</source>
-        <translation type="unfinished"></translation>
+        <translation>Sol doppio bemolle</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="63"/>
         <location filename="../notenames.qml" line="48"/>
         <source>Dbb</source>
-        <translation type="unfinished"></translation>
+        <translation>Re doppio bemolle</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="64"/>
         <location filename="../notenames.qml" line="49"/>
         <source>Abb</source>
-        <translation type="unfinished"></translation>
+        <translation>La doppio bemolle</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="65"/>
         <location filename="../notenames.qml" line="50"/>
         <source>Ebb</source>
-        <translation type="unfinished"></translation>
+        <translation>Mi doppio bemolle</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="66"/>
         <location filename="../notenames.qml" line="51"/>
         <source>Bbb</source>
-        <translation type="unfinished"></translation>
+        <translation>Si doppio bemolle</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="67"/>
         <location filename="../notenames.qml" line="52"/>
         <source>Fb</source>
-        <translation type="unfinished"></translation>
+        <translation>Fa bemolle</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="68"/>
         <location filename="../notenames.qml" line="53"/>
         <source>Cb</source>
-        <translation type="unfinished"></translation>
+        <translation>Do bemolle</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="70"/>
@@ -163,55 +163,55 @@
         <location filename="../notenames.js" line="88"/>
         <location filename="../notenames.qml" line="73"/>
         <source>E#</source>
-        <translation type="unfinished"></translation>
+        <translation>Mi diesis</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="89"/>
         <location filename="../notenames.qml" line="74"/>
         <source>B#</source>
-        <translation type="unfinished"></translation>
+        <translation>Si diesis</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="90"/>
         <location filename="../notenames.qml" line="75"/>
         <source>F##</source>
-        <translation type="unfinished"></translation>
+        <translation>Fa doppio diesis</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="91"/>
         <location filename="../notenames.qml" line="76"/>
         <source>C##</source>
-        <translation type="unfinished"></translation>
+        <translation>Do doppio diesis</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="92"/>
         <location filename="../notenames.qml" line="77"/>
         <source>G##</source>
-        <translation type="unfinished"></translation>
+        <translation>Sol doppio diesis</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="93"/>
         <location filename="../notenames.qml" line="78"/>
         <source>D##</source>
-        <translation type="unfinished"></translation>
+        <translation>Re doppio iesis</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="94"/>
         <location filename="../notenames.qml" line="79"/>
         <source>A##</source>
-        <translation type="unfinished"></translation>
+        <translation>La doppio diesis</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="95"/>
         <location filename="../notenames.qml" line="80"/>
         <source>E##</source>
-        <translation type="unfinished"></translation>
+        <translation>Mi doppio diesis</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="96"/>
         <location filename="../notenames.qml" line="81"/>
         <source>B##</source>
-        <translation type="unfinished"></translation>
+        <translation>Si doppio diesis</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="97"/>
@@ -225,25 +225,25 @@
         <location filename="../notenames.js" line="106"/>
         <location filename="../notenames.qml" line="91"/>
         <source>#</source>
-        <translation type="unfinished"></translation>
+        <translation> diesis</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="107"/>
         <location filename="../notenames.qml" line="92"/>
         <source>b</source>
-        <translation type="unfinished"></translation>
+        <translation> bemolle</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="108"/>
         <location filename="../notenames.qml" line="93"/>
         <source>##</source>
-        <translation type="unfinished"></translation>
+        <translation> doppio diesis</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="109"/>
         <location filename="../notenames.qml" line="94"/>
         <source>bb</source>
-        <translation type="unfinished"></translation>
+        <translation> doppio bemolle</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="110"/>
@@ -381,7 +381,7 @@
         <location filename="../notenames.js" line="152"/>
         <location filename="../notenames.qml" line="27"/>
         <source>Note Names</source>
-        <translation type="unfinished"></translation>
+        <translation>Nomi delle note</translation>
     </message>
 </context>
 </TS>
