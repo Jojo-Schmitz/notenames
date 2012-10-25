@@ -7,8 +7,7 @@
         <location filename="../notenames.js" line="76"/>
         <location filename="../notenames.qml" line="61"/>
         <source>C</source>
-        <translatorcomment>Do</translatorcomment>
-        <translation></translation>
+        <translation>Do</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="71"/>
