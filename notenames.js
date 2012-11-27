@@ -47,12 +47,25 @@ function run() {
    if (typeof curScore === 'undefined')
       return;
    var cursor   = new Cursor(curScore);
-   for (var staff = 0; staff < curScore.staves; ++staff) {
+   cursor.goToSelectionStart();
+   var startStaff = cursor.staff;
+   cursor.goToSelectionEnd();
+   var endStaff   = cursor.staff;
+   var endTick    = cursor.tick(); // if no selection, go to end of score
+
+   if (cursor.eos()) { // if no selection
+      startStaff = 0; // start with 1st staff
+      endStaff = curScore.staves; // and end with last
+   }
+
+   for (var staff = startStaff; staff < endStaff; ++staff) {
+      cursor.goToSelectionStart();
       cursor.staff = staff;
       cursor.voice = 0;
-      cursor.rewind();  // set cursor to first chord/rest
+      if (cursor.eos())
+         cursor.rewind(); // if no selection, start at beginning of score
 
-      while (!cursor.eos()) {
+      while (cursor.tick() < endTick) {
          if (cursor.isChord()) {
             var text  = new Text(curScore);
 
@@ -139,7 +152,7 @@ function run() {
             cursor.putStaffText(text);
          } // end if isChord()
          cursor.next();
-      } // end while eos()
+      } // end while tick() < endTick
    } // end for staff
 }
 
