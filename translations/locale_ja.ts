@@ -37,7 +37,7 @@
         <location filename="../notenames.js" line="75"/>
         <location filename="../notenames.qml" line="60"/>
         <source>F</source>
-        <translation>Fa</translation>
+        <translation>ヘ</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="60"/>
