@@ -239,25 +239,27 @@
         <location filename="../notenames.js" line="106"/>
         <location filename="../notenames.qml" line="91"/>
         <source>#</source>
-        <translation type="unfinished"></translation>
+        <translation>♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="107"/>
         <location filename="../notenames.qml" line="92"/>
         <source>b</source>
-        <translation type="unfinished"></translation>
+        <translation>♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="108"/>
         <location filename="../notenames.qml" line="93"/>
         <source>##</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>double # in Unicode is at U+1D12A, &quot;𝄪&quot;</translatorcomment>
+        <translation>♯♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="109"/>
         <location filename="../notenames.qml" line="94"/>
         <source>bb</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>Apparently there is no double b in Unicode</translatorcomment>
+        <translation>♭♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="110"/>

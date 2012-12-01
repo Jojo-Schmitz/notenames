@@ -7,211 +7,246 @@
         <location filename="../notenames.js" line="76"/>
         <location filename="../notenames.qml" line="61"/>
         <source>C</source>
-        <translation>ハ</translation>
+        <translatorcomment>native ハ or commonly used ド (for &apos;do&apos;)</translatorcomment>
+        <translation>ド</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="71"/>
         <location filename="../notenames.qml" line="56"/>
         <source>Db</source>
-        <translation>変ニ</translation>
+        <translatorcomment>native 変ニ or commonly used レ♭ (for &apos;re&apos;)</translatorcomment>
+        <translation>レ♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="78"/>
         <location filename="../notenames.qml" line="63"/>
         <source>D</source>
-        <translation>ニ</translation>
+        <translatorcomment>native ニ or commonly used レ (for &apos;re&apos;)</translatorcomment>
+        <translation>レ</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="73"/>
         <location filename="../notenames.qml" line="58"/>
         <source>Eb</source>
-        <translation>変ホ</translation>
+        <translatorcomment>native 変ホ or commonly used ミ♭ (for &apos;mi&apos;)</translatorcomment>
+        <translation>ミ♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="80"/>
         <location filename="../notenames.qml" line="65"/>
         <source>E</source>
-        <translation>ホ</translation>
+        <translatorcomment>native ホ or commonly used ミ (for &apos;mi&apos;)</translatorcomment>
+        <translation>ミ</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="75"/>
         <location filename="../notenames.qml" line="60"/>
         <source>F</source>
-        <translation>ヘ</translation>
+        <translatorcomment>native ヘ or commonly used ファ (for &apos;fa&apos;)</translatorcomment>
+        <translation>ファ</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="60"/>
         <location filename="../notenames.qml" line="45"/>
         <source>Fbb</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>native ヘ (what about the ♭♭?) or commonly used ファ♭♭ (for &apos;fa&apos;)</translatorcomment>
+        <translation>ファ♭♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="61"/>
         <location filename="../notenames.qml" line="46"/>
         <source>Cbb</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>native ハ (what about the ♭♭?) or commonly used ド♭♭ (for do&apos;)</translatorcomment>
+        <translation>ド♭♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="62"/>
         <location filename="../notenames.qml" line="47"/>
         <source>Gbb</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>native ト (what about the ♭♭?) or commonly used ソ♭♭ (for &apos;so&apos;)</translatorcomment>
+        <translation>ソ♭♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="63"/>
         <location filename="../notenames.qml" line="48"/>
         <source>Dbb</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>native ニ (what about the ♭♭?) or commonly used レ♭♭ (for re&apos;)</translatorcomment>
+        <translation>レ♭♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="64"/>
         <location filename="../notenames.qml" line="49"/>
         <source>Abb</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>native イ (what about the ♭♭?) or commonly used ラ♭♭ (for &apos;la&apos;)</translatorcomment>
+        <translation>ラ♭♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="65"/>
         <location filename="../notenames.qml" line="50"/>
         <source>Ebb</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>native ホ (what about the ♭♭?) or commonly used ミ♭♭ (for &apos;mi&apos;)</translatorcomment>
+        <translation>ミ♭♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="66"/>
         <location filename="../notenames.qml" line="51"/>
         <source>Bbb</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>native ロ (what about the ♭♭?) or commonly used シ♭♭ (for &apos;si&apos;)</translatorcomment>
+        <translation>シ♭♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="67"/>
         <location filename="../notenames.qml" line="52"/>
         <source>Fb</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>native ヘ (what about the ♭?) or commonly used ファ♭♭ (for &apos;fa&apos;)</translatorcomment>
+        <translation>ファ♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="68"/>
         <location filename="../notenames.qml" line="53"/>
         <source>Cb</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>native ハ (what about the ♭?) or commonly used ド♭ (for &apos;do&apos;)</translatorcomment>
+        <translation>ド♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="70"/>
         <location filename="../notenames.qml" line="55"/>
         <source>Gb</source>
-        <translation>変ト</translation>
+        <translatorcomment>native 変ト or the commonly used ソ♭ (for so&apos;)</translatorcomment>
+        <translation>ソ♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="77"/>
         <location filename="../notenames.qml" line="62"/>
         <source>G</source>
-        <translation>ト</translation>
+        <translatorcomment>native ト or the commonly used ソ (for so&apos;)</translatorcomment>
+        <translation>ソ</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="72"/>
         <location filename="../notenames.qml" line="57"/>
         <source>Ab</source>
-        <translation>変イ</translation>
+        <translatorcomment>native 変イ or the  commonly used ラ♭ (for &apos;la&apos;)</translatorcomment>
+        <translation>ラ</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="79"/>
         <location filename="../notenames.qml" line="64"/>
         <source>A</source>
-        <translation>イ</translation>
+        <translatorcomment>native イ or the  commonly used ラ (for &apos;la&apos;)</translatorcomment>
+        <translation>ラ</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="74"/>
         <location filename="../notenames.qml" line="59"/>
         <source>Bb</source>
-        <translation>変ロ</translation>
+        <translatorcomment>変ロ or the commonly used シ♭ (for &apos;si&apos;)</translatorcomment>
+        <translation>シ♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="81"/>
         <location filename="../notenames.qml" line="66"/>
         <source>B</source>
-        <translation>ロ</translation>
+        <translatorcomment>ロ or the commonly used シ (for &apos;si&apos;)</translatorcomment>
+        <translation>シ</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="83"/>
         <location filename="../notenames.qml" line="68"/>
         <source>F#</source>
-        <translation>嬰ヘ</translation>
+        <translatorcomment>native 嬰ヘ or commonly used ファ♯ (for &apos;fa&apos;)</translatorcomment>
+        <translation>ファ♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="84"/>
         <location filename="../notenames.qml" line="69"/>
         <source>C#</source>
-        <translation>嬰ハ</translation>
+        <translatorcomment>native 嬰ハ or commonly used ド♯ (for &apos;do&apos;)</translatorcomment>
+        <translation>ド♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="85"/>
         <location filename="../notenames.qml" line="70"/>
         <source>G#</source>
-        <translation>嬰ト</translation>
+        <translatorcomment>native 嬰ト or the commonly used ソ♯ (for so&apos;)</translatorcomment>
+        <translation>ソ♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="86"/>
         <location filename="../notenames.qml" line="71"/>
         <source>D#</source>
-        <translation>嬰ニ</translation>
+        <translatorcomment>native 嬰ニ or commonly used レ♯ (for &apos;re&apos;)</translatorcomment>
+        <translation>レ♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="87"/>
         <location filename="../notenames.qml" line="72"/>
         <source>A#</source>
-        <translation>嬰イ</translation>
+        <translatorcomment>native 嬰イ or the  commonly used ラ♯ (for &apos;la&apos;)</translatorcomment>
+        <translation>ラ♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="88"/>
         <location filename="../notenames.qml" line="73"/>
         <source>E#</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>native ホ (what about the ♯?) or commonly used ミ♯ (for &apos;mi&apos;)</translatorcomment>
+        <translation>ミ♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="89"/>
         <location filename="../notenames.qml" line="74"/>
         <source>B#</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>ロ (what about the ♯?) or the commonly used シ♯ (for &apos;si&apos;)</translatorcomment>
+        <translation>シ♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="90"/>
         <location filename="../notenames.qml" line="75"/>
         <source>F##</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>native ヘ (what about the ♯♯?) or commonly used ファ♯♯ (for &apos;fa&apos;)</translatorcomment>
+        <translation>ファ♯♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="91"/>
         <location filename="../notenames.qml" line="76"/>
         <source>C##</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>native 嬰ハ (what about the ?) or commonly used ド♯♯ (for &apos;do&apos;)</translatorcomment>
+        <translation>ド♯♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="92"/>
         <location filename="../notenames.qml" line="77"/>
         <source>G##</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>native 嬰ト (what about the ♯♯) or the commonly used ソ♯♯ (for so&apos;)</translatorcomment>
+        <translation>ソ♯♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="93"/>
         <location filename="../notenames.qml" line="78"/>
         <source>D##</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>native 嬰ニ (what about the ♯♯) or commonly used レ♯♯ (for &apos;re&apos;)</translatorcomment>
+        <translation>レ♯♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="94"/>
         <location filename="../notenames.qml" line="79"/>
         <source>A##</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>native 嬰イ (what about the ♯♯)) or the  commonly used ラ♯♯ (for &apos;la&apos;)</translatorcomment>
+        <translation>ラ♯♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="95"/>
         <location filename="../notenames.qml" line="80"/>
         <source>E##</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>native ホ (what about the ♯?) or commonly used ミ♯♯ (for &apos;mi&apos;)</translatorcomment>
+        <translation>ミ♯♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="96"/>
         <location filename="../notenames.qml" line="81"/>
         <source>B##</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>ロ (what about the ♯♯?) or the commonly used シ♯♯ (for &apos;si&apos;)</translatorcomment>
+        <translation>シ♯♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="97"/>
@@ -225,25 +260,27 @@
         <location filename="../notenames.js" line="106"/>
         <location filename="../notenames.qml" line="91"/>
         <source>#</source>
-        <translation type="unfinished"></translation>
+        <translation>♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="107"/>
         <location filename="../notenames.qml" line="92"/>
         <source>b</source>
-        <translation type="unfinished"></translation>
+        <translation>♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="108"/>
         <location filename="../notenames.qml" line="93"/>
         <source>##</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>double # in Unicode is at U+1D12A, &quot;𝄪&quot;</translatorcomment>
+        <translation>♯♯</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="109"/>
         <location filename="../notenames.qml" line="94"/>
         <source>bb</source>
-        <translation type="unfinished"></translation>
+        <translatorcomment>Apparently there is no double b in Unicode</translatorcomment>
+        <translation>♭♭</translation>
     </message>
     <message>
         <location filename="../notenames.js" line="110"/>
