@@ -67,54 +67,57 @@ function run() {
 
       while (cursor.tick() < endTick) {
          if (cursor.isChord()) {
-            var text  = new Text(curScore);
+           var text  = new Text(curScore);
+           for (i = cursor.chord().notes - 1; i >=0 ; i--) {
+	     if ( i < cursor.chord().notes - 1 )
+	       text.text += ",";
 
-            switch (cursor.chord().topNote().tpc) {
-               case -1: text.text = qsTr("Fbb"); break;
-               case 0:  text.text = qsTr("Cbb"); break;
-               case 1:  text.text = qsTr("Gbb"); break;
-               case 2:  text.text = qsTr("Dbb"); break;
-               case 3:  text.text = qsTr("Abb"); break;
-               case 4:  text.text = qsTr("Ebb"); break;
-               case 5:  text.text = qsTr("Bbb"); break;
-               case 6:  text.text = qsTr("Fb");  break;
-               case 7:  text.text = qsTr("Cb");  break;
+             switch (cursor.chord().note(i).tpc) {
+               case -1: text.text += qsTr("Fbb"); break;
+               case 0:  text.text += qsTr("Cbb"); break;
+               case 1:  text.text += qsTr("Gbb"); break;
+               case 2:  text.text += qsTr("Dbb"); break;
+               case 3:  text.text += qsTr("Abb"); break;
+               case 4:  text.text += qsTr("Ebb"); break;
+               case 5:  text.text += qsTr("Bbb"); break;
+               case 6:  text.text += qsTr("Fb");  break;
+               case 7:  text.text += qsTr("Cb");  break;
 
-               case 8:  text.text = qsTr("Gb");  break;
-               case 9:  text.text = qsTr("Db");  break;
-               case 10: text.text = qsTr("Ab");  break;
-               case 11: text.text = qsTr("Eb");  break;
-               case 12: text.text = qsTr("Bb");  break;
-               case 13: text.text = qsTr("F");   break;
-               case 14: text.text = qsTr("C");   break;
-               case 15: text.text = qsTr("G");   break;
-               case 16: text.text = qsTr("D");   break;
-               case 17: text.text = qsTr("A");   break;
-               case 18: text.text = qsTr("E");   break;
-               case 19: text.text = qsTr("B");   break;
+               case 8:  text.text += qsTr("Gb");  break;
+               case 9:  text.text += qsTr("Db");  break;
+               case 10: text.text += qsTr("Ab");  break;
+               case 11: text.text += qsTr("Eb");  break;
+               case 12: text.text += qsTr("Bb");  break;
+               case 13: text.text += qsTr("F");   break;
+               case 14: text.text += qsTr("C");   break;
+               case 15: text.text += qsTr("G");   break;
+               case 16: text.text += qsTr("D");   break;
+               case 17: text.text += qsTr("A");   break;
+               case 18: text.text += qsTr("E");   break;
+               case 19: text.text += qsTr("B");   break;
 
-               case 20: text.text = qsTr("F#");  break;
-               case 21: text.text = qsTr("C#");  break;
-               case 22: text.text = qsTr("G#");  break;
-               case 23: text.text = qsTr("D#");  break;
-               case 24: text.text = qsTr("A#");  break;
-               case 25: text.text = qsTr("E#");  break;
-               case 26: text.text = qsTr("B#");  break;
-               case 27: text.text = qsTr("F##"); break;
-               case 28: text.text = qsTr("C##"); break;
-               case 29: text.text = qsTr("G##"); break;
-               case 30: text.text = qsTr("D##"); break;
-               case 31: text.text = qsTr("A##"); break;
-               case 32: text.text = qsTr("E##"); break;
-               case 33: text.text = qsTr("B##"); break;
-               default: text.text = qsTr("?");   break;
-            } // end switch tpc
+               case 20: text.text += qsTr("F#");  break;
+               case 21: text.text += qsTr("C#");  break;
+               case 22: text.text += qsTr("G#");  break;
+               case 23: text.text += qsTr("D#");  break;
+               case 24: text.text += qsTr("A#");  break;
+               case 25: text.text += qsTr("E#");  break;
+               case 26: text.text += qsTr("B#");  break;
+               case 27: text.text += qsTr("F##"); break;
+               case 28: text.text += qsTr("C##"); break;
+               case 29: text.text += qsTr("G##"); break;
+               case 30: text.text += qsTr("D##"); break;
+               case 31: text.text += qsTr("A##"); break;
+               case 32: text.text += qsTr("E##"); break;
+               case 33: text.text += qsTr("B##"); break;
+               default: text.text += qsTr("?");   break;
+             } // end switch tpc
 
 // change below false to true for courtesy- and microtonal accidentals
 // you might need to come up with suitable translations 
 // only #, b, natural and possibly also ## seem to be available in UNICODE
-            if (false) {
-               switch (cursor.chord().topNote().userAccidental) {
+             if (false) {
+               switch (cursor.chord().note(i).userAccidental) {
                   case 0:                                            break;
                   case 1:  text.text += qsTr("#");                   break;
                   case 2:  text.text += qsTr("b");                   break;
@@ -143,13 +146,14 @@ function run() {
                   case 25: text.text += qsTr("sori");                break;
                   case 26: text.text += qsTr("koron");               break;
                   default: text.text += qsTr("?");                   break;
-               } // end switch userAccidental
-            } // end if courtesy- and microtonal accidentals
+                } // end switch userAccidental
+             } // end if courtesy- and microtonal accidentals
 
-            text.yOffset = -4;
-            if (cursor.chord().topNote().pitch > 83)
+             text.yOffset = -4;
+             if (cursor.chord().topNote().pitch > 83)
                text.xOffset = 1;
-            cursor.putStaffText(text);
+             cursor.putStaffText(text);
+	   } // end for note
          } // end if isChord()
          cursor.next();
       } // end while tick() < endTick
