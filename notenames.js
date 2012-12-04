@@ -54,23 +54,24 @@ function run() {
    var endTick    = cursor.tick(); // if no selection, go to end of score
 
    if (cursor.eos()) { // if no selection
-      startStaff = 0; // start with 1st staff
-      endStaff = curScore.staves; // and end with last
+     startStaff = 0; // start with 1st staff
+     endStaff = curScore.staves; // and end with last
    }
 
    for (var staff = startStaff; staff < endStaff; ++staff) {
-      cursor.goToSelectionStart();
-      cursor.staff = staff;
-      cursor.voice = 0;
-      if (cursor.eos())
+     for (var voice = 0; voice < 4; voice ++) {
+       cursor.goToSelectionStart();
+       cursor.staff = staff;
+       cursor.voice = voice;
+       if (cursor.eos())
          cursor.rewind(); // if no selection, start at beginning of score
 
-      while (cursor.tick() < endTick) {
+       while (cursor.tick() < endTick) {
          if (cursor.isChord()) {
            var text  = new Text(curScore);
            for (i = cursor.chord().notes - 1; i >=0 ; i--) {
-	     if ( i < cursor.chord().notes - 1 )
-	       text.text += ",";
+             if ( i < cursor.chord().notes - 1 )
+               text.text += ",";
 
              switch (cursor.chord().note(i).tpc) {
                case -1: text.text += qsTr("Fbb"); break;
@@ -146,17 +147,23 @@ function run() {
                   case 25: text.text += qsTr("sori");                break;
                   case 26: text.text += qsTr("koron");               break;
                   default: text.text += qsTr("?");                   break;
-                } // end switch userAccidental
+               } // end switch userAccidental
              } // end if courtesy- and microtonal accidentals
 
-             text.yOffset = -4;
-             if (cursor.chord().topNote().pitch > 83)
-               text.xOffset = 1;
+             switch (voice) {
+               case 0: text.yOffset = -4; break;
+               case 1: text.yOffset =  5; break;
+               case 2: text.yOffset = -5; break;
+               case 3: text.yOffset =  6; break;
+             }
+             if ((voice ==0) && (cursor.chord().topNote().pitch > 83))
+               text.xOffset = 1; / works only in treble clef and voice 1
              cursor.putStaffText(text);
-	   } // end for note
+           } // end for note
          } // end if isChord()
          cursor.next();
-      } // end while tick() < endTick
+       } // end while tick() < endTick
+     } // end for voice
    } // end for staff
 }
 
