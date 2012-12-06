@@ -20,12 +20,12 @@
 //  Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 //=============================================================================
 
-import QtQuick 1.0
+import QtQuick 1.1
 import MuseScore 1.0
 
 MuseScore {
-   version: "1.0"
-   description: "This plugin names notes as per your language settings"
+   version: "2.0"
+   description: qsTr("This plugin names notes as per your language settings")
    menuPath: "Plugins." + qsTr("Note Names")
 
    onRun: {
