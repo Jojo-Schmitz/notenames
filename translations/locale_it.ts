@@ -381,7 +381,7 @@
         <location filename="../notenames.js" line="176"/>
         <location filename="../notenames.qml" line="29"/>
         <source>Note Names</source>
-        <translation type="unfinished"></translation>
+        <translation>Nomi delle note</translation>
     </message>
     <message>
         <location filename="../notenames.qml" line="28"/>
