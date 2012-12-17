@@ -69,8 +69,8 @@ function run() {
        while (cursor.tick() < endTick) {
          if (cursor.isChord()) {
            var text  = new Text(curScore);
-           for (i = cursor.chord().notes - 1; i >=0 ; i--) {
-             if ( i < cursor.chord().notes - 1 )
+           for (i = 0; i < cursor.chord().notes; i++) {
+             if ( i > 0 )
                text.text += ",";
 
              switch (cursor.chord().note(i).tpc) {
