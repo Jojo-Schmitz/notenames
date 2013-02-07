@@ -156,7 +156,7 @@ function run() {
                case 2: text.yOffset = -5; break;
                case 3: text.yOffset =  6; break;
              }
-             if ((voice ==0) && (cursor.chord().topNote().pitch > 83))
+             if ((voice == 0) && (cursor.chord().topNote().pitch > 83))
                text.xOffset = 1; // works only in treble clef and voice 1
              cursor.putStaffText(text);
            } // end for note
