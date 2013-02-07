@@ -26,7 +26,7 @@ import MuseScore 1.0
 MuseScore {
    version: "2.0"
    description: qsTr("This plugin names notes as per your language settings")
-   menuPath: "Plugins." + qsTr("Note Names")
+   menuPath: "Plugins.Notes." + qsTr("Note Names") // this does not work, why?
 
    onRun: {
       if (typeof curScore === 'undefined')
@@ -120,9 +120,9 @@ MuseScore {
                   } // end switch userAccidental
                } // end if courtesy- and microtonal accidentals
 
-               //text.yOffset = -4;
-               //if (cursor.elements.notes[0].pitch > 83)
-                  //text.xOffset = 1;
+               text.pos.y = 1;
+               if (cursor.element.notes[0].pitch > 83)
+                  text.pos.x = 1;
                cursor.add(text);
             } // end if CHORD
             cursor.next();

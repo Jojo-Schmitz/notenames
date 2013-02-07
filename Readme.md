@@ -1,5 +1,5 @@
 This Plugin for MuseScore is derived from the [Note Names plugin] (http://musescore.org/en/handbook/plugins#notenames) that comes as part of MuseScore and is meant to replace that.
-It adds the note names of all notes in all voices of all staves staff text (above/below the staff) and uses note names according to the locale MuseScore is configured for rather than just the English note names C, D, E, F, G, A, B.
+It adds the note names of all notes in either the current selection or all voices of all staves in the entire score as staff text (above/below the staff) and uses note names according to the locale MuseScore is configured for rather than just the English note names C, D, E, F, G, A, B.
 So the output changes with the setting of Menu -> Edit -> Preferences... -> General -> Language, resp. if that is set to 'System', the output depends on the language setting of your PC.
 As a further extensions it also names notes with sharps, double sharps and double flats and the notename moves aside a bit, if it would otherwise collide with the note.
 
