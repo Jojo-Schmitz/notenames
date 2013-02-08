@@ -39,7 +39,7 @@ MuseScore {
       }
       console.log(startStaff + " - " + endStaff + " - " + endTick)
 
-      for (var staff = startStaff; staff <= endStaff; staff++) {
+      for (var staff = startStaff; staff < endStaff; staff++) {
         for (var voice = 0; voice < 4; voice++) {
           cursor.rewind(1); // beginning of selection
           cursor.voice    = voice;
