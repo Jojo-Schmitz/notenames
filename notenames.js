@@ -173,7 +173,7 @@ function run() {
 //---------------------------------------------------------
 
 var mscorePlugin = {
-   menu: 'Plugins.Notes' + qsTr("Note Names"),
+   menu: 'Plugins.Notes.' + qsTr("Note Names"),
    init: init,
    run:  run
 };
