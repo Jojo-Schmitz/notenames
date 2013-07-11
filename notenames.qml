@@ -13,7 +13,7 @@
 //  the file LICENCE.GPL
 //=============================================================================
 
-import QtQuick 1.1
+import QtQuick 2.0
 import MuseScore 1.0
 
 MuseScore {
