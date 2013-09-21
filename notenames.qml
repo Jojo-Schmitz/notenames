@@ -99,9 +99,9 @@ MuseScore {
                 } // end switch tpc
 
                 // octave, middle C being C4
-                //text.text += ((notes[i].pitch / 12) - 1)
+                //text.text += (Math.floor(notes[i].pitch / 12) - 1)
                 // or
-                //text.text += ((notes[i].ppitch / 12) - 1)
+                //text.text += (Math.floor(notes[i].ppitch / 12) - 1)
 
 // change below false to true for courtesy- and microtonal accidentals
 // you might need to come up with suitable translations 

@@ -115,7 +115,7 @@ function run() {
              } // end switch tpc
 
              // octave, middle C being C4
-             //text.text += ((cursor.chord().note(i).pitch / 12) - 1)
+             //text.text += (Math.floor(cursor.chord().note(i).pitch / 12) - 1)
 
 // change below false to true for courtesy- and microtonal accidentals
 // you might need to come up with suitable translations 
