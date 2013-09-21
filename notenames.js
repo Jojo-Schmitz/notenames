@@ -114,6 +114,9 @@ function run() {
                default: text.text += qsTr("?");   break;
              } // end switch tpc
 
+             // octave, middle C being C4
+             //text.text += ((cursor.chord().note(i).pitch / 12) - 1)
+
 // change below false to true for courtesy- and microtonal accidentals
 // you might need to come up with suitable translations 
 // only #, b, natural and possibly also ## seem to be available in UNICODE
