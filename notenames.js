@@ -6,7 +6,7 @@
 //  Note Names Plugin
 //
 //  Copyright (C)2008 Werner Schweer and others
-//  Copyright (C)2012 Joachim Schmitz
+//  Copyright (C)2012-2014 Joachim Schmitz
 //
 //  This program is free software; you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License version 2.
@@ -68,50 +68,51 @@ function run() {
 
        while (cursor.tick() < endTick) {
          if (cursor.isChord()) {
-           var text  = new Text(curScore);
+           var text = new Text(curScore);
            for (i = 0; i < cursor.chord().notes; i++) {
+             var sep = ","; // change to "\n" if you want them vertically
              if ( i > 0 )
-               text.text += ",";
+               text.text = sep + text.text;
 
              switch (cursor.chord().note(i).tpc) {
-               case -1: text.text += qsTr("Fbb"); break;
-               case 0:  text.text += qsTr("Cbb"); break;
-               case 1:  text.text += qsTr("Gbb"); break;
-               case 2:  text.text += qsTr("Dbb"); break;
-               case 3:  text.text += qsTr("Abb"); break;
-               case 4:  text.text += qsTr("Ebb"); break;
-               case 5:  text.text += qsTr("Bbb"); break;
-               case 6:  text.text += qsTr("Fb");  break;
-               case 7:  text.text += qsTr("Cb");  break;
+               case -1: text.text = qsTr("Fbb") + text.text; break;
+               case  0: text.text = qsTr("Cbb") + text.text; break;
+               case  1: text.text = qsTr("Gbb") + text.text; break;
+               case  2: text.text = qsTr("Dbb") + text.text; break;
+               case  3: text.text = qsTr("Abb") + text.text; break;
+               case  4: text.text = qsTr("Ebb") + text.text; break;
+               case  5: text.text = qsTr("Bbb") + text.text; break;
+               case  6: text.text = qsTr("Fb")  + text.text; break;
+               case  7: text.text = qsTr("Cb")  + text.text; break;
 
-               case 8:  text.text += qsTr("Gb");  break;
-               case 9:  text.text += qsTr("Db");  break;
-               case 10: text.text += qsTr("Ab");  break;
-               case 11: text.text += qsTr("Eb");  break;
-               case 12: text.text += qsTr("Bb");  break;
-               case 13: text.text += qsTr("F");   break;
-               case 14: text.text += qsTr("C");   break;
-               case 15: text.text += qsTr("G");   break;
-               case 16: text.text += qsTr("D");   break;
-               case 17: text.text += qsTr("A");   break;
-               case 18: text.text += qsTr("E");   break;
-               case 19: text.text += qsTr("B");   break;
+               case  8:  text.text = qsTr("Gb") + text.text; break;
+               case  9: text.text = qsTr("Db")  + text.text; break;
+               case 10: text.text = qsTr("Ab")  + text.text; break;
+               case 11: text.text = qsTr("Eb")  + text.text; break;
+               case 12: text.text = qsTr("Bb")  + text.text; break;
+               case 13: text.text = qsTr("F")   + text.text; break;
+               case 14: text.text = qsTr("C")   + text.text; break;
+               case 15: text.text = qsTr("G")   + text.text; break;
+               case 16: text.text = qsTr("D")   + text.text; break;
+               case 17: text.text = qsTr("A")   + text.text; break;
+               case 18: text.text = qsTr("E")   + text.text; break;
+               case 19: text.text = qsTr("B")   + text.text; break;
 
-               case 20: text.text += qsTr("F#");  break;
-               case 21: text.text += qsTr("C#");  break;
-               case 22: text.text += qsTr("G#");  break;
-               case 23: text.text += qsTr("D#");  break;
-               case 24: text.text += qsTr("A#");  break;
-               case 25: text.text += qsTr("E#");  break;
-               case 26: text.text += qsTr("B#");  break;
-               case 27: text.text += qsTr("F##"); break;
-               case 28: text.text += qsTr("C##"); break;
-               case 29: text.text += qsTr("G##"); break;
-               case 30: text.text += qsTr("D##"); break;
-               case 31: text.text += qsTr("A##"); break;
-               case 32: text.text += qsTr("E##"); break;
-               case 33: text.text += qsTr("B##"); break;
-               default: text.text += qsTr("?");   break;
+               case 20: text.text = qsTr("F#")  + text.text; break;
+               case 21: text.text = qsTr("C#")  + text.text; break;
+               case 22: text.text = qsTr("G#")  + text.text; break;
+               case 23: text.text = qsTr("D#")  + text.text; break;
+               case 24: text.text = qsTr("A#")  + text.text; break;
+               case 25: text.text = qsTr("E#")  + text.text; break;
+               case 26: text.text = qsTr("B#")  + text.text; break;
+               case 27: text.text = qsTr("F##") + text.text; break;
+               case 28: text.text = qsTr("C##") + text.text; break;
+               case 29: text.text = qsTr("G##") + text.text; break;
+               case 30: text.text = qsTr("D##") + text.text; break;
+               case 31: text.text = qsTr("A##") + text.text; break;
+               case 32: text.text = qsTr("E##") + text.text; break;
+               case 33: text.text = qsTr("B##") + text.text; break;
+               default: text.text = qsTr("?")   + text.text; break;
              } // end switch tpc
 
              // octave, middle C being C4
@@ -122,34 +123,34 @@ function run() {
 // only #, b, natural and possibly also ## seem to be available in UNICODE
              if (false) {
                switch (cursor.chord().note(i).userAccidental) {
-                  case 0:                                            break;
-                  case 1:  text.text += qsTr("#");                   break;
-                  case 2:  text.text += qsTr("b");                   break;
-                  case 3:  text.text += qsTr("##");                  break;
-                  case 4:  text.text += qsTr("bb");                  break;
-                  case 5:  text.text += qsTr("natural");             break;
-                  case 6:  text.text += qsTr("flat-slash");          break;
-                  case 7:  text.text += qsTr("flat-slash2");         break;
-                  case 8:  text.text += qsTr("mirrored-flat2");      break;
-                  case 9:  text.text += qsTr("mirrored-flat");       break;
-                  case 10: text.text += qsTr("mirrored-flat-slash"); break;
-                  case 11: text.text += qsTr("flat-flat-slash");     break;
-                  case 12: text.text += qsTr("sharp-slash");         break;
-                  case 13: text.text += qsTr("sharp-slash2");        break;
-                  case 14: text.text += qsTr("sharp-slash3");        break;
-                  case 15: text.text += qsTr("sharp-slash4");        break;
-                  case 16: text.text += qsTr("sharp arrow up");      break;
-                  case 17: text.text += qsTr("sharp arrow down");    break;
-                  case 18: text.text += qsTr("sharp arrow both");    break;
-                  case 19: text.text += qsTr("flat arrow up");       break;
-                  case 20: text.text += qsTr("flat arrow down");     break;
-                  case 21: text.text += qsTr("flat arrow both");     break;
-                  case 22: text.text += qsTr("natural arrow down");  break;
-                  case 23: text.text += qsTr("natural arrow up");    break;
-                  case 24: text.text += qsTr("natural arrow both");  break;
-                  case 25: text.text += qsTr("sori");                break;
-                  case 26: text.text += qsTr("koron");               break;
-                  default: text.text += qsTr("?");                   break;
+                  case  0: break;
+                  case  1: text.text = qsTr("#") + text.text; break;
+                  case  2: text.text = qsTr("b") + text.text; break;
+                  case  3: text.text = qsTr("##") + text.text; break;
+                  case  4: text.text = qsTr("bb") + text.text; break;
+                  case  5: text.text = qsTr("natural") + text.text; break;
+                  case  6: text.text = qsTr("flat-slash") + text.text; break;
+                  case  7: text.text = qsTr("flat-slash2") + text.text; break;
+                  case  8: text.text = qsTr("mirrored-flat2") + text.text; break;
+                  case  9: text.text = qsTr("mirrored-flat") + text.text; break;
+                  case 10: text.text = qsTr("mirrored-flat-slash") + text.text; break;
+                  case 11: text.text = qsTr("flat-flat-slash") + text.text; break;
+                  case 12: text.text = qsTr("sharp-slash") + text.text; break;
+                  case 13: text.text = qsTr("sharp-slash2") + text.text; break;
+                  case 14: text.text = qsTr("sharp-slash3") + text.text; break;
+                  case 15: text.text = qsTr("sharp-slash4") + text.text; break;
+                  case 16: text.text = qsTr("sharp arrow up") + text.text; break;
+                  case 17: text.text = qsTr("sharp arrow down") + text.text; break;
+                  case 18: text.text = qsTr("sharp arrow both") + text.text; break;
+                  case 19: text.text = qsTr("flat arrow up") + text.text; break;
+                  case 20: text.text = qsTr("flat arrow down") + text.text; break;
+                  case 21: text.text = qsTr("flat arrow both") + text.text; break;
+                  case 22: text.text = qsTr("natural arrow down") + text.text; break;
+                  case 23: text.text = qsTr("natural arrow up") + text.text; break;
+                  case 24: text.text = qsTr("natural arrow both") + text.text; break;
+                  case 25: text.text = qsTr("sori") + text.text; break;
+                  case 26: text.text = qsTr("koron") + text.text; break;
+                  default: text.text = qsTr("?") + text.text; break;
                } // end switch userAccidental
              } // end if courtesy- and microtonal accidentals
 
