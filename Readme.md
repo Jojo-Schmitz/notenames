@@ -9,6 +9,8 @@ The double sharp and double flat notes as well as Fb, Cb, E# and B# still need t
 
 If you also want it to show courtesy- and microtonal accidentals, change `false` to `true` in the plugin code. Note however, that none of these have yet been translated, and their 'clear text' names can be rather long (e.g. "mirrored-flat-slash").
 
+If you want a separator different from ",", change the corresponding variable in the plugin code, you can also change it to "\n" to get the note names stacked vertically, but in that case most probably also need to modify the position it gets printed.
+
 To use the plugin, you must first install it according to the [instructions in the Handbook] (http://musescore.org/en/handbook/plugins "Handbook").
 
 The idea for this plugin stems from a [discussion in the forum] (http://musescore.org/en/node/16786), the microtonal extension from [another discussion in the forum] (http://musescore.org/en/node/16870).
