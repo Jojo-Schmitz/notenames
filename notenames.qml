@@ -27,7 +27,7 @@ MuseScore {
          if ( i > 0 )
             text.text = sep + text.text;           
 
-         switch (notes[i].tpc) {
+         switch (notes[i].tpc1) {
             case -1: text.text = qsTr("Fbb") + text.text; break;
             case  0: text.text = qsTr("Cbb") + text.text; break;
             case  1: text.text = qsTr("Gbb") + text.text; break;
