@@ -27,7 +27,9 @@ MuseScore {
          if ( i > 0 )
             text.text = sep + text.text;           
 
-         switch (notes[i].tpc1) {
+         if (typeof notes[i].tpc === "undefined") // like for grace notes ?!?
+            return
+         switch (notes[i].tpc) {
             case -1: text.text = qsTr("Fbb") + text.text; break;
             case  0: text.text = qsTr("Cbb") + text.text; break;
             case  1: text.text = qsTr("Gbb") + text.text; break;
@@ -154,7 +156,7 @@ MuseScore {
                if (cursor.element && cursor.element.type == Element.CHORD) {
                   var text  = newElement(Element.STAFF_TEXT);
                   var notes = cursor.element.graceNotes;
-                  //nameChord(notes, text);  // doesn't work, tpc seems undefine, resulting in a "?"
+                  nameChord(notes, text);
                   if (text.text != "") {
                      text.pos.x -= 1;
                      text.text += "-";
