@@ -122,22 +122,22 @@ MuseScore {
       var fullScore = false;
       cursor.rewind(1);
       if (!cursor.segment) { // no selection
-            fullScore = true;
-            startStaff = 0; // start with 1st staff
-            endStaff  = curScore.nstaves - 1; // and end with last
+         fullScore = true;
+         startStaff = 0; // start with 1st staff
+         endStaff  = curScore.nstaves - 1; // and end with last
       } else {
-            startStaff = cursor.staffIdx;
-            cursor.rewind(2);
-            if (cursor.tick == 0) {
-                  // this happens when the selection includes
-                  // the last measure of the score.
-                  // rewind(2) goes behind the last segment (where
-                  // there's none) and sets tick=0
-                  endTick = curScore.lastSegment.tick + 1;
-            } else {
-                  endTick = cursor.tick;
-            }
-            endStaff   = cursor.staffIdx;
+         startStaff = cursor.staffIdx;
+         cursor.rewind(2);
+         if (cursor.tick == 0) {
+            // this happens when the selection includes
+            // the last measure of the score.
+            // rewind(2) goes behind the last segment (where
+            // there's none) and sets tick=0
+            endTick = curScore.lastSegment.tick + 1;
+         } else {
+            endTick = cursor.tick;
+         }
+         endStaff   = cursor.staffIdx;
       }
       console.log(startStaff + " - " + endStaff + " - " + endTick)
 
