@@ -155,13 +155,28 @@ MuseScore {
             while (cursor.segment && (fullScore || cursor.tick < endTick)) {
                if (cursor.element && cursor.element.type == Element.CHORD) {
                   var text  = newElement(Element.STAFF_TEXT);
-                  var notes = cursor.element.graceNotes;
-                  nameChord(notes, text);
-                  if (text.text != "") {
-                     text.pos.x -= 1;
-                     text.text += "-";
+
+                  var graceChords = cursor.element.graceNotes;
+                  for (var i=0;i<graceChords.length;i++) {
+                     // iterate through all grace chords
+                     var notes = graceChords[i].notes;
+                     nameChord(notes, text);
+                     // there seems to be no way of knowing the exact horizontal pos.
+                     // of a grace note, so we have to guess:
+                     text.pos.x = -2.5 * (graceChords.length - i);
+                     switch (voice) {
+                        case 0: text.pos.y =  1; break;
+                        case 1: text.pos.y = 10; break;
+                        case 2: text.pos.y = -1; break;
+                        case 3: text.pos.y = 12; break;
+                     }
+
+                     cursor.add(text);
+                     // new text for next element
+                     text  = newElement(Element.STAFF_TEXT);
                   }
-                  notes = cursor.element.notes;
+
+                  var notes = cursor.element.notes;
                   nameChord(notes, text);
 
                   switch (voice) {
