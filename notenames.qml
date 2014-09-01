@@ -154,10 +154,10 @@ MuseScore {
 
             while (cursor.segment && (fullScore || cursor.tick < endTick)) {
                if (cursor.element && cursor.element.type == Element.CHORD) {
-                  var text  = newElement(Element.STAFF_TEXT);
+                  var text = newElement(Element.STAFF_TEXT);
 
                   var graceChords = cursor.element.graceNotes;
-                  for (var i=0;i<graceChords.length;i++) {
+                  for (var i = 0; i < graceChords.length; i++) {
                      // iterate through all grace chords
                      var notes = graceChords[i].notes;
                      nameChord(notes, text);
