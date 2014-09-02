@@ -6,6 +6,7 @@
 //
 //  Copyright (C) 2012 Werner Schweer
 //  Copyright (C) 2013, 2014 Joachim Schmitz
+//  Copyright (C) 2014 Jörn Eichler
 //
 //  This program is free software; you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License version 2
@@ -117,7 +118,7 @@ MuseScore {
       if (typeof curScore === 'undefined')
          Qt.quit();
 
-      var cursor     = curScore.newCursor();
+      var cursor = curScore.newCursor();
       var startStaff;
       var endStaff;
       var endTick;
@@ -139,7 +140,7 @@ MuseScore {
          } else {
             endTick = cursor.tick;
          }
-         endStaff   = cursor.staffIdx;
+         endStaff = cursor.staffIdx;
       }
       console.log(startStaff + " - " + endStaff + " - " + endTick)
 
