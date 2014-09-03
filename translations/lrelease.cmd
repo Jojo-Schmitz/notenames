@@ -1,2 +1,2 @@
-C:/QtSDK/Desktop/Qt/4.8.0/mingw/bin/lrelease *.ts
+C:/QtSDK/Desktop/Qt/5.3/mingw/bin/lrelease *.ts
 pause
