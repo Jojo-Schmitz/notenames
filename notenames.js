@@ -69,7 +69,7 @@ function run() {
        while (cursor.tick() < endTick) {
          if (cursor.isChord()) {
            var text = new Text(curScore);
-           for (i = 0; i < cursor.chord().notes; i++) {
+           for (i = cursor.chord().notes - 1; i >= 0; i--) {
              var sep = ","; // change to "\n" if you want them vertically
              if ( i > 0 )
                text.text = sep + text.text;
@@ -177,7 +177,7 @@ function run() {
 //---------------------------------------------------------
 
 var mscorePlugin = {
-   menu: 'Plugins.Notes.' + qsTr("Note Names"),
+   menu: 'Plugins.Notes.' + qsTr("Note Names") + "Bottom-up",
    init: init,
    run:  run
 };

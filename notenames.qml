@@ -20,10 +20,10 @@ import MuseScore 1.0
 MuseScore {
    version: "2.0"
    description: qsTr("This plugin names notes as per your language setting")
-   menuPath: "Plugins.Notes." + qsTr("Note Names") // this does not work, why?
+   menuPath: "Plugins.Notes." + qsTr("Note Names") + qsTr("Bottom-Up") // translation does not work, why?
 
    function nameChord (notes, text) {
-      for (var i = 0; i < notes.length; i++) {
+      for (var i = notes.length - 1; i >= 0; i--) {
          var sep = ","; // change to "\n" if you want them vertically
          if ( i > 0 )
             text.text = sep + text.text;           
