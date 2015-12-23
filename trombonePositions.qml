@@ -5,7 +5,7 @@
 //  Note Names Plugin
 //
 //  Copyright (C) 2012 Werner Schweer
-//  Copyright (C) 2013, 2014 Joachim Schmitz
+//  Copyright (C) 2013-2015 Joachim Schmitz
 //  Copyright (C) 2014 Jörn Eichler
 //
 //  This program is free software; you can redistribute it and/or modify
@@ -19,12 +19,78 @@ import MuseScore 1.0
 
 MuseScore {
    version: "2.0"
-   description: qsTr("This plugin names notes as per your language setting")
-   menuPath: "Plugins.Notes." + qsTr("Note Names") // this does not work, why?
+   description: qsTr("This plugin adds trombone slide positions")
+   menuPath: "Plugins.Notes." + qsTr("Trombone Slide Positions") // this does not work, why?
+
+   function slidePos (pitch) {
+      pitch -= 20; // Trombone
+      switch (pitch) {
+         case 2:                       // Bb0
+         case 3:
+         case 4:
+         case 5:
+         case 6:
+         case 7:
+         case 8:
+         case 9:
+         case 10:
+         case 11:
+         case 12: return ""; break;
+         case 13:
+         case 14:                      // Bb1 ********
+         case 15:                      // H/B
+         case 16:                      // C2
+         case 17:                      // Cis/Des
+         case 18:                      // D
+         case 19: return "x";  break;  // Dis/Es
+         case 20: return "7";  break;  // E2
+         case 21: return "6";  break;  // F2
+         case 22: return "5";  break;  // Fis, Ges
+         case 23: return "4";  break;  // G2
+         case 24: return "3";  break;  // Gis, As
+         case 25: return "2";  break;  // A2
+         case 26: return "1";  break;  // Bb2
+         case 27: return "7";  break;  // H/B
+         case 28: return "6";  break;  // C3
+         case 29: return "5";  break;  // Cis/Des
+         case 30: return "4";  break;  // D3
+         case 31: return "3";  break;  // Dis, Es
+         case 32: return "2";  break;  // E3
+         case 33: return "1";  break;  // F3
+         case 34: return "5";  break;  // Fis, Ges
+         case 35: return "4";  break;  // G3
+         case 36: return "3";  break;  // Gis, As
+         case 37: return "2";  break;  // A
+         case 38: return "1";  break;  // Bb3
+         case 39: return "4";  break;  // H/B
+         case 40: return "3";  break;  // C4
+         case 41: return "2";  break;  // Cis/Des
+         case 42: return "1";  break;  // D4
+         case 43: return "3";  break;  // Dis/Es
+         case 44: return "2";  break;  // E4
+         case 45: return "1";  break;  // F4
+         case 46: return "3+"; break;  // Fis/Ges
+         case 47: return "2+"; break;  // G4
+         case 48: return "3";  break;  // Gis/As
+         case 49: return "2";  break;  // A
+         case 50: return "1";  break;  // Bb
+         case 51: return "H";  break;  // H/B
+         default: return "x";
+      }
+   }
 
    function nameChord (notes, text) {
       for (var i = 0; i < notes.length; i++) {
          var sep = ","; // change to "\n" if you want them vertically
+         if ( i == 0) {
+            // top note only, in case of on multi note chords
+            // comment below to disable slide positions and have notennames only
+            text.text = text.text + "\n" + slidePos(notes[i].pitch);
+            // comment above and
+            // uncomment 2 below to have slide positions only
+            //text.text = text.text slidePos(notes[i].pitch);
+            //return;
+         }
          if ( i > 0 )
             text.text = sep + text.text; // any but top note
 
@@ -181,7 +247,7 @@ MuseScore {
                   nameChord(notes, text);
 
                   switch (voice) {
-                     case 0: text.pos.y =  1; break;
+                     case 0: text.pos.y =  9; break;
                      case 1: text.pos.y = 10; break;
                      case 2: text.pos.y = -1; break;
                      case 3: text.pos.y = 12; break;
