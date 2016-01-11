@@ -5,7 +5,7 @@
 //  Note Names Plugin
 //
 //  Copyright (C) 2012 Werner Schweer
-//  Copyright (C) 2013-2015 Joachim Schmitz
+//  Copyright (C) 2013 - 2016 Joachim Schmitz
 //  Copyright (C) 2014 Jörn Eichler
 //
 //  This program is free software; you can redistribute it and/or modify
@@ -97,43 +97,43 @@ MuseScore {
          if (typeof notes[i].tpc === "undefined") // like for grace notes ?!?
             return
          switch (notes[i].tpc) {
-            case -1: text.text = qsTr("Fbb") + text.text; break;
-            case  0: text.text = qsTr("Cbb") + text.text; break;
-            case  1: text.text = qsTr("Gbb") + text.text; break;
-            case  2: text.text = qsTr("Dbb") + text.text; break;
-            case  3: text.text = qsTr("Abb") + text.text; break;
-            case  4: text.text = qsTr("Ebb") + text.text; break;
-            case  5: text.text = qsTr("Bbb") + text.text; break;
-            case  6: text.text = qsTr("Fb")  + text.text; break;
-            case  7: text.text = qsTr("Cb")  + text.text; break;
+            case -1: text.text = qsTranslate("InspectorAmbitus", "F♭♭") + text.text; break;
+            case  0: text.text = qsTranslate("InspectorAmbitus", "C♭♭") + text.text; break;
+            case  1: text.text = qsTranslate("InspectorAmbitus", "G♭♭") + text.text; break;
+            case  2: text.text = qsTranslate("InspectorAmbitus", "D♭♭") + text.text; break;
+            case  3: text.text = qsTranslate("InspectorAmbitus", "A♭♭") + text.text; break;
+            case  4: text.text = qsTranslate("InspectorAmbitus", "E♭♭") + text.text; break;
+            case  5: text.text = qsTranslate("InspectorAmbitus", "B♭♭") + text.text; break;
+            case  6: text.text = qsTranslate("InspectorAmbitus", "F♭")  + text.text; break;
+            case  7: text.text = qsTranslate("InspectorAmbitus", "C♭")  + text.text; break;
 
-            case  8: text.text = qsTr("Gb")  + text.text; break;
-            case  9: text.text = qsTr("Db")  + text.text; break;
-            case 10: text.text = qsTr("Ab")  + text.text; break;
-            case 11: text.text = qsTr("Eb")  + text.text; break;
-            case 12: text.text = qsTr("Bb")  + text.text; break;
-            case 13: text.text = qsTr("F")   + text.text; break;
-            case 14: text.text = qsTr("C")   + text.text; break;
-            case 15: text.text = qsTr("G")   + text.text; break;
-            case 16: text.text = qsTr("D")   + text.text; break;
-            case 17: text.text = qsTr("A")   + text.text; break;
-            case 18: text.text = qsTr("E")   + text.text; break;
-            case 19: text.text = qsTr("B")   + text.text; break;
+            case  8: text.text = qsTranslate("InspectorAmbitus", "G♭")  + text.text; break;
+            case  9: text.text = qsTranslate("InspectorAmbitus", "D♭")  + text.text; break;
+            case 10: text.text = qsTranslate("InspectorAmbitus", "A♭")  + text.text; break;
+            case 11: text.text = qsTranslate("InspectorAmbitus", "E♭")  + text.text; break;
+            case 12: text.text = qsTranslate("InspectorAmbitus", "B♭")  + text.text; break;
+            case 13: text.text = qsTranslate("InspectorAmbitus", "F")   + text.text; break;
+            case 14: text.text = qsTranslate("InspectorAmbitus", "C")   + text.text; break;
+            case 15: text.text = qsTranslate("InspectorAmbitus", "G")   + text.text; break;
+            case 16: text.text = qsTranslate("InspectorAmbitus", "D")   + text.text; break;
+            case 17: text.text = qsTranslate("InspectorAmbitus", "A")   + text.text; break;
+            case 18: text.text = qsTranslate("InspectorAmbitus", "E")   + text.text; break;
+            case 19: text.text = qsTranslate("InspectorAmbitus", "B")   + text.text; break;
 
-            case 20: text.text = qsTr("F#")  + text.text; break;
-            case 21: text.text = qsTr("C#")  + text.text; break;
-            case 22: text.text = qsTr("G#")  + text.text; break;
-            case 23: text.text = qsTr("D#")  + text.text; break;
-            case 24: text.text = qsTr("A#")  + text.text; break;
-            case 25: text.text = qsTr("E#")  + text.text; break;
-            case 26: text.text = qsTr("B#")  + text.text; break;
-            case 27: text.text = qsTr("F##") + text.text; break;
-            case 28: text.text = qsTr("C##") + text.text; break;
-            case 29: text.text = qsTr("G##") + text.text; break;
-            case 30: text.text = qsTr("D##") + text.text; break;
-            case 31: text.text = qsTr("A##") + text.text; break;
-            case 32: text.text = qsTr("E##") + text.text; break;
-            case 33: text.text = qsTr("B##") + text.text; break;
+            case 20: text.text = qsTranslate("InspectorAmbitus", "F♯")  + text.text; break;
+            case 21: text.text = qsTranslate("InspectorAmbitus", "C♯")  + text.text; break;
+            case 22: text.text = qsTranslate("InspectorAmbitus", "G♯")  + text.text; break;
+            case 23: text.text = qsTranslate("InspectorAmbitus", "D♯")  + text.text; break;
+            case 24: text.text = qsTranslate("InspectorAmbitus", "A♯")  + text.text; break;
+            case 25: text.text = qsTranslate("InspectorAmbitus", "E♯")  + text.text; break;
+            case 26: text.text = qsTranslate("InspectorAmbitus", "B♯")  + text.text; break;
+            case 27: text.text = qsTranslate("InspectorAmbitus", "F♯♯") + text.text; break;
+            case 28: text.text = qsTranslate("InspectorAmbitus", "C♯♯") + text.text; break;
+            case 29: text.text = qsTranslate("InspectorAmbitus", "G♯♯") + text.text; break;
+            case 30: text.text = qsTranslate("InspectorAmbitus", "D♯♯") + text.text; break;
+            case 31: text.text = qsTranslate("InspectorAmbitus", "A♯♯") + text.text; break;
+            case 32: text.text = qsTranslate("InspectorAmbitus", "E♯♯") + text.text; break;
+            case 33: text.text = qsTranslate("InspectorAmbitus", "B♯♯") + text.text; break;
             default: text.text = qsTr("?")   + text.text; break;
          } // end switch tpc
 
@@ -148,32 +148,32 @@ MuseScore {
          if (false) {
             switch (notes[i].userAccidental) {
                case  0: break;
-               case  1: text.text = qsTr("#") + text.text; break;
-               case  2: text.text = qsTr("b") + text.text; break;
-               case  3: text.text = qsTr("##") + text.text; break;
-               case  4: text.text = qsTr("bb") + text.text; break;
-               case  5: text.text = qsTr("natural") + text.text; break;
-               case  6: text.text = qsTr("flat-slash") + text.text; break;
-               case  7: text.text = qsTr("flat-slash2") + text.text; break;
-               case  8: text.text = qsTr("mirrored-flat2") + text.text; break;
-               case  9: text.text = qsTr("mirrored-flat") + text.text; break;
-               case 10: text.text = qsTr("mirrored-flat-slash") + text.text; break;
-               case 11: text.text = qsTr("flat-flat-slash") + text.text; break;
-               case 12: text.text = qsTr("sharp-slash") + text.text; break;
-               case 13: text.text = qsTr("sharp-slash2") + text.text; break;
-               case 14: text.text = qsTr("sharp-slash3") + text.text; break;
-               case 15: text.text = qsTr("sharp-slash4") + text.text; break;
-               case 16: text.text = qsTr("sharp arrow up") + text.text; break;
-               case 17: text.text = qsTr("sharp arrow down") + text.text; break;
-               case 18: text.text = qsTr("sharp arrow both") + text.text; break;
-               case 19: text.text = qsTr("flat arrow up") + text.text; break;
-               case 20: text.text = qsTr("flat arrow down") + text.text; break;
-               case 21: text.text = qsTr("flat arrow both") + text.text; break;
-               case 22: text.text = qsTr("natural arrow down") + text.text; break;
-               case 23: text.text = qsTr("natural arrow up") + text.text; break;
-               case 24: text.text = qsTr("natural arrow both") + text.text; break;
-               case 25: text.text = qsTr("sori") + text.text; break;
-               case 26: text.text = qsTr("koron") + text.text; break;
+               case  1: text.text = qsTranslate("accidental", "Sharp") + text.text; break;
+               case  2: text.text = qsTranslate("accidental", "Flat") + text.text; break;
+               case  3: text.text = qsTranslate("accidental", "Double sharp") + text.text; break;
+               case  4: text.text = qsTranslate("accidental", "Double flat") + text.text; break;
+               case  5: text.text = qsTranslate("accidental", "Natural") + text.text; break;
+               case  6: text.text = qsTranslate("accidental", "Flat-slash") + text.text; break;
+               case  7: text.text = qsTranslate("accidental", "Flat-slash2") + text.text; break;
+               case  8: text.text = qsTranslate("accidental", "Mirrored-flat2") + text.text; break;
+               case  9: text.text = qsTranslate("accidental", "Mirrored-flat") + text.text; break;
+               case 10: text.text = qsTranslate("accidental", "Mirrored-flat-slash") + text.text; break;
+               case 11: text.text = qsTranslate("accidental", "Flat-flat-slash") + text.text; break;
+               case 12: text.text = qsTranslate("accidental", "Sharp-slash") + text.text; break;
+               case 13: text.text = qsTranslate("accidental", "Sharp-slash2") + text.text; break;
+               case 14: text.text = qsTranslate("accidental", "Sharp-slash3") + text.text; break;
+               case 15: text.text = qsTranslate("accidental", "Sharp-slash4") + text.text; break;
+               case 16: text.text = qsTranslate("accidental", "Sharp arrow up") + text.text; break;
+               case 17: text.text = qsTranslate("accidental", "Sharp arrow down") + text.text; break;
+               case 18: text.text = qsTranslate("accidental", "Sharp arrow both") + text.text; break;
+               case 19: text.text = qsTranslate("accidental", "Flat arrow up") + text.text; break;
+               case 20: text.text = qsTranslate("accidental", "Flat arrow down") + text.text; break;
+               case 21: text.text = qsTranslate("accidental", "Flat arrow both") + text.text; break;
+               case 22: text.text = qsTranslate("accidental", "Natural arrow down") + text.text; break;
+               case 23: text.text = qsTranslate("accidental", "Natural arrow up") + text.text; break;
+               case 24: text.text = qsTranslate("accidental", "Natural arrow both") + text.text; break;
+               case 25: text.text = qsTranslate("accidental", "Sori") + text.text; break;
+               case 26: text.text = qsTranslate("accidental", "Koron") + text.text; break;
                default: text.text = qsTr("?") + text.text; break;
             } // end switch userAccidental
          } // end if courtesy- and microtonal accidentals
