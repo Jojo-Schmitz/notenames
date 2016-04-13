@@ -88,7 +88,7 @@ MuseScore {
             text.text = text.text + "\n" + slidePos(notes[i].pitch);
             // comment above and
             // uncomment 2 below to have slide positions only
-            //text.text = text.text slidePos(notes[i].pitch);
+            //text.text = text.text + slidePos(notes[i].pitch);
             //return;
          }
          if ( i > 0 )
