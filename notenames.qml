@@ -24,7 +24,9 @@ MuseScore {
 
    function nameChord (notes, text) {
       for (var i = 0; i < notes.length; i++) {
-         var sep = ","; // change to "\n" if you want them vertically
+         var sep = ","; // change to "\n" if you want them vertically, then
+                        // you may need to decrease the text.pos.y values for
+                        // case 0 an 2 (voice 1 and 3) further down (twice)
          if ( i > 0 )
             text.text = sep + text.text; // any but top note
 
