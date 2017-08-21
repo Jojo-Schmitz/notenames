@@ -24,9 +24,8 @@ MuseScore {
 
    function nameChord (notes, text) {
       for (var i = notes.length - 1; i >= 0; i--) {
-         var sep = ","; // change to "\n" if you want them vertically
-         if ( i > 0 )
-            text.text = sep + text.text;           
+         var sep = ",";         if ( i > 0 )
+            text.text = sep + text.text; // any but bottom note 
 
          if (typeof notes[i].tpc === "undefined") // like for grace notes ?!?
             return
@@ -77,7 +76,7 @@ MuseScore {
          //text.text += (Math.floor(notes[i].ppitch / 12) - 1)
 
 // change below false to true for courtesy- and microtonal accidentals
-// you might need to come up with suitable translations 
+// you might need to come up with suitable translations
 // only #, b, natural and possibly also ## seem to be available in UNICODE
          if (false) {
             switch (notes[i].userAccidental) {
