@@ -5,7 +5,7 @@
 //  Note Names Plugin
 //
 //  Copyright (C) 2012 Werner Schweer
-//  Copyright (C) 2013 - 2016 Joachim Schmitz
+//  Copyright (C) 2013 - 2019 Joachim Schmitz
 //  Copyright (C) 2014 Jörn Eichler
 //
 //  This program is free software; you can redistribute it and/or modify
@@ -133,7 +133,7 @@ MuseScore {
       } else {
          startStaff = cursor.staffIdx;
          cursor.rewind(2);
-         if (cursor.tick == 0) {
+         if (cursor.tick === 0) {
             // this happens when the selection includes
             // the last measure of the score.
             // rewind(2) goes behind the last segment (where
@@ -156,14 +156,14 @@ MuseScore {
                cursor.rewind(0); // beginning of score
 
             while (cursor.segment && (fullScore || cursor.tick < endTick)) {
-               if (cursor.element && cursor.element.type == Element.CHORD) {
+               if (cursor.element && cursor.element.type === Element.CHORD) {
                   var text = newElement(Element.STAFF_TEXT);
 
                   var graceChords = cursor.element.graceNotes;
                   for (var i = 0; i < graceChords.length; i++) {
                      // iterate through all grace chords
-                     var notes = graceChords[i].notes;
-                     nameChord(notes, text);
+                     var graceNotes = graceChords[i].notes;
+                     nameChord(graceNotes, text);
                      // there seems to be no way of knowing the exact horizontal pos.
                      // of a grace note, so we have to guess:
                      text.pos.x = -2.5 * (graceChords.length - i);
@@ -176,7 +176,7 @@ MuseScore {
 
                      cursor.add(text);
                      // new text for next element
-                     text  = newElement(Element.STAFF_TEXT);
+                     text = newElement(Element.STAFF_TEXT);
                   }
 
                   var notes = cursor.element.notes;
@@ -188,8 +188,8 @@ MuseScore {
                      case 2: text.pos.y = -1; break;
                      case 3: text.pos.y = 12; break;
                   }
-                  if ((voice == 0) && (notes[0].pitch > 83))
                      text.pos.x = 1;
+                  if ((voice === 0) && (notes[0].pitch > 83))
                   cursor.add(text);
                } // end if CHORD
                cursor.next();
