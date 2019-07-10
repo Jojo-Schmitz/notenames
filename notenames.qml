@@ -15,18 +15,16 @@
 //=============================================================================
 
 import QtQuick 2.0
-import MuseScore 1.0
+import MuseScore 3.0
 
 MuseScore {
-   version: "2.0"
+   version: "3.0"
    description: qsTr("This plugin names notes as per your language setting")
    menuPath: "Plugins.Notes." + qsTr("Note Names") // this does not work, why?
 
    function nameChord (notes, text) {
       for (var i = 0; i < notes.length; i++) {
-         var sep = ","; // change to "\n" if you want them vertically, then
-                        // you may need to decrease the text.pos.y values for
-                        // case 0 an 2 (voice 1 and 3) further down (twice)
+         var sep = ","; // change to "\n" if you want them vertically
          if ( i > 0 )
             text.text = sep + text.text; // any but top note
 
@@ -166,12 +164,12 @@ MuseScore {
                      nameChord(graceNotes, text);
                      // there seems to be no way of knowing the exact horizontal pos.
                      // of a grace note, so we have to guess:
-                     text.pos.x = -2.5 * (graceChords.length - i);
+                     text.offsetX = -2.5 * (graceChords.length - i);
                      switch (voice) {
-                        case 0: text.pos.y =  1; break;
-                        case 1: text.pos.y = 10; break;
-                        case 2: text.pos.y = -1; break;
-                        case 3: text.pos.y = 12; break;
+                        case 0: text.offsetY =  1; break;
+                        case 1: text.offsetY = 10; break;
+                        case 2: text.offsetY = -1; break;
+                        case 3: text.offsetY = 12; break;
                      }
 
                      cursor.add(text);
@@ -183,13 +181,13 @@ MuseScore {
                   nameChord(notes, text);
 
                   switch (voice) {
-                     case 0: text.pos.y =  1; break;
-                     case 1: text.pos.y = 10; break;
-                     case 2: text.pos.y = -1; break;
-                     case 3: text.pos.y = 12; break;
+                     case 0: text.offsetY =  1; break;
+                     case 1: text.offsetY = 10; break;
+                     case 2: text.offsetY = -1; break;
+                     case 3: text.offsetY = 12; break;
                   }
-                     text.pos.x = 1;
-                  if ((voice === 0) && (notes[0].pitch > 83))
+                  if ((voice == 0) && (notes[0].pitch > 83))
+                     text.offsetX = 1;
                   cursor.add(text);
                } // end if CHORD
                cursor.next();
