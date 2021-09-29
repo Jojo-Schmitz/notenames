@@ -24,7 +24,7 @@ MuseScore {
    menuPath: "Plugins.Notes." + qsTr("Note Names")
 
    // Small note name size is fraction of the full font size.
-   property var fontSizeMini: 0.7;
+   property real fontSizeMini: 0.7;
 
    function nameChord (notes, text, small) {
       var sep = "\n";   // change to "," if you want them horizontally (anybody?)
@@ -189,8 +189,8 @@ MuseScore {
 
                   // First...we need to scan grace notes for existence and break them
                   // into their appropriate lists with the correct ordering of notes.
-                  var leadingLifo = new Array();   // List for leading grace notes
-                  var trailingFifo = new Array();  // List for trailing grace notes
+                  var leadingLifo = Array();   // List for leading grace notes
+                  var trailingFifo = Array();  // List for trailing grace notes
                   var graceChords = cursor.element.graceNotes;
                   // Build separate lists of leading and trailing grace note chords.
                   if (graceChords.length > 0) {
