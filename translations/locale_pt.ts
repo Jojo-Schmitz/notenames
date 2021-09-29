@@ -4,177 +4,177 @@
 <context>
     <name>InspectorAmbitus</name>
     <message>
-        <location filename="../notenames.qml" line="34"/>
+        <location filename="../notenames.qml" line="43"/>
         <source>F♭♭</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="35"/>
+        <location filename="../notenames.qml" line="44"/>
         <source>C♭♭</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="36"/>
+        <location filename="../notenames.qml" line="45"/>
         <source>G♭♭</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="37"/>
+        <location filename="../notenames.qml" line="46"/>
         <source>D♭♭</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="38"/>
+        <location filename="../notenames.qml" line="47"/>
         <source>A♭♭</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="39"/>
+        <location filename="../notenames.qml" line="48"/>
         <source>E♭♭</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="40"/>
+        <location filename="../notenames.qml" line="49"/>
         <source>B♭♭</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="41"/>
+        <location filename="../notenames.qml" line="50"/>
         <source>F♭</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="42"/>
+        <location filename="../notenames.qml" line="51"/>
         <source>C♭</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="44"/>
+        <location filename="../notenames.qml" line="53"/>
         <source>G♭</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="45"/>
+        <location filename="../notenames.qml" line="54"/>
         <source>D♭</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="46"/>
+        <location filename="../notenames.qml" line="55"/>
         <source>A♭</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="47"/>
+        <location filename="../notenames.qml" line="56"/>
         <source>E♭</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="48"/>
+        <location filename="../notenames.qml" line="57"/>
         <source>B♭</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="49"/>
+        <location filename="../notenames.qml" line="58"/>
         <source>F</source>
         <translation type="unfinished">Fá</translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="50"/>
+        <location filename="../notenames.qml" line="59"/>
         <source>C</source>
         <translation type="unfinished">Dó</translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="51"/>
+        <location filename="../notenames.qml" line="60"/>
         <source>G</source>
         <translation type="unfinished">Sol</translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="52"/>
+        <location filename="../notenames.qml" line="61"/>
         <source>D</source>
         <translation type="unfinished">Rè</translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="53"/>
+        <location filename="../notenames.qml" line="62"/>
         <source>A</source>
         <translation type="unfinished">La</translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="54"/>
+        <location filename="../notenames.qml" line="63"/>
         <source>E</source>
         <translation type="unfinished">Mi</translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="55"/>
+        <location filename="../notenames.qml" line="64"/>
         <source>B</source>
         <translation type="unfinished">Si</translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="57"/>
+        <location filename="../notenames.qml" line="66"/>
         <source>F♯</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="58"/>
+        <location filename="../notenames.qml" line="67"/>
         <source>C♯</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="59"/>
+        <location filename="../notenames.qml" line="68"/>
         <source>G♯</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="60"/>
+        <location filename="../notenames.qml" line="69"/>
         <source>D♯</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="61"/>
+        <location filename="../notenames.qml" line="70"/>
         <source>A♯</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="62"/>
+        <location filename="../notenames.qml" line="71"/>
         <source>E♯</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="63"/>
+        <location filename="../notenames.qml" line="72"/>
         <source>B♯</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="64"/>
+        <location filename="../notenames.qml" line="73"/>
         <source>F♯♯</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="65"/>
+        <location filename="../notenames.qml" line="74"/>
         <source>C♯♯</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="66"/>
+        <location filename="../notenames.qml" line="75"/>
         <source>G♯♯</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="67"/>
+        <location filename="../notenames.qml" line="76"/>
         <source>D♯♯</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="68"/>
+        <location filename="../notenames.qml" line="77"/>
         <source>A♯♯</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="69"/>
+        <location filename="../notenames.qml" line="78"/>
         <source>E♯♯</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="70"/>
+        <location filename="../notenames.qml" line="79"/>
         <source>B♯♯</source>
         <translation type="unfinished"></translation>
     </message>
@@ -182,132 +182,132 @@
 <context>
     <name>accidental</name>
     <message>
-        <location filename="../notenames.qml" line="85"/>
+        <location filename="../notenames.qml" line="98"/>
         <source>Sharp</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="86"/>
+        <location filename="../notenames.qml" line="99"/>
         <source>Flat</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="87"/>
+        <location filename="../notenames.qml" line="100"/>
         <source>Double sharp</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="88"/>
+        <location filename="../notenames.qml" line="101"/>
         <source>Double flat</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="89"/>
+        <location filename="../notenames.qml" line="102"/>
         <source>Natural</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="90"/>
+        <location filename="../notenames.qml" line="103"/>
         <source>Flat-slash</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="91"/>
+        <location filename="../notenames.qml" line="104"/>
         <source>Flat-slash2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="92"/>
+        <location filename="../notenames.qml" line="105"/>
         <source>Mirrored-flat2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="93"/>
+        <location filename="../notenames.qml" line="106"/>
         <source>Mirrored-flat</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="94"/>
+        <location filename="../notenames.qml" line="107"/>
         <source>Mirrored-flat-slash</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="95"/>
+        <location filename="../notenames.qml" line="108"/>
         <source>Flat-flat-slash</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="96"/>
+        <location filename="../notenames.qml" line="109"/>
         <source>Sharp-slash</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="97"/>
+        <location filename="../notenames.qml" line="110"/>
         <source>Sharp-slash2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="98"/>
+        <location filename="../notenames.qml" line="111"/>
         <source>Sharp-slash3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="99"/>
+        <location filename="../notenames.qml" line="112"/>
         <source>Sharp-slash4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="100"/>
+        <location filename="../notenames.qml" line="113"/>
         <source>Sharp arrow up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="101"/>
+        <location filename="../notenames.qml" line="114"/>
         <source>Sharp arrow down</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="102"/>
+        <location filename="../notenames.qml" line="115"/>
         <source>Sharp arrow both</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="103"/>
+        <location filename="../notenames.qml" line="116"/>
         <source>Flat arrow up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="104"/>
+        <location filename="../notenames.qml" line="117"/>
         <source>Flat arrow down</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="105"/>
+        <location filename="../notenames.qml" line="118"/>
         <source>Flat arrow both</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="106"/>
+        <location filename="../notenames.qml" line="119"/>
         <source>Natural arrow down</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="107"/>
+        <location filename="../notenames.qml" line="120"/>
         <source>Natural arrow up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="108"/>
+        <location filename="../notenames.qml" line="121"/>
         <source>Natural arrow both</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="109"/>
+        <location filename="../notenames.qml" line="122"/>
         <source>Sori</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../notenames.qml" line="110"/>
+        <location filename="../notenames.qml" line="123"/>
         <source>Koron</source>
         <translation type="unfinished"></translation>
     </message>
@@ -315,19 +315,9 @@
 <context>
     <name>notenames</name>
     <message>
-        <location filename="../notenames.qml" line="71"/>
-        <location filename="../notenames.qml" line="111"/>
+        <location filename="../notenames.qml" line="80"/>
+        <location filename="../notenames.qml" line="124"/>
         <source>?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../notenames.qml" line="23"/>
-        <source>Note Names</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../notenames.qml" line="22"/>
-        <source>This plugin names notes as per your language setting</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
