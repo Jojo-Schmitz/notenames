@@ -26,15 +26,15 @@ MuseScore {
    // Small note name size is fraction of the full font size.
    property real fontSizeMini: 0.7;
 
-      id: noteNames
+   id: noteNames
 
-      Component.onCompleted : {
-            if (mscoreMajorVersion >= 4) {
-                  noteNames.title = "Note Names";
-                  noteNames.categoryCode: "composing-arranging-tools"
-                  noteNames.thumbnailName: "note_names.png"
-            }
+   Component.onCompleted : {
+      if (mscoreMajorVersion >= 4) {
+         noteNames.title = "Note Names"
+         noteNames.categoryCode = "composing-arranging-tools"
+         noteNames.thumbnailName = "note_names.png"
       }
+   }
 
    function nameChord (notes, text, small) {
       var sep = "\n";   // change to "," if you want them horizontally (anybody?)
