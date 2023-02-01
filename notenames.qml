@@ -19,7 +19,7 @@ import QtQuick 2.2
 import MuseScore 3.0
 
 MuseScore {
-   version: "3.6"
+   version: "4.0"
    description: "This plugin names notes as per your language setting"
    menuPath: "Plugins.Notes." + "Note Names"
 
@@ -50,43 +50,45 @@ MuseScore {
          if (typeof notes[i].tpc === "undefined") // like for grace notes ?!?
             return
          switch (notes[i].tpc) {
-            case -1: name = qsTranslate("InspectorAmbitus", "F♭♭"); break;
-            case  0: name = qsTranslate("InspectorAmbitus", "C♭♭"); break;
-            case  1: name = qsTranslate("InspectorAmbitus", "G♭♭"); break;
-            case  2: name = qsTranslate("InspectorAmbitus", "D♭♭"); break;
-            case  3: name = qsTranslate("InspectorAmbitus", "A♭♭"); break;
-            case  4: name = qsTranslate("InspectorAmbitus", "E♭♭"); break;
-            case  5: name = qsTranslate("InspectorAmbitus", "B♭♭"); break;
-            case  6: name = qsTranslate("InspectorAmbitus", "F♭"); break;
-            case  7: name = qsTranslate("InspectorAmbitus", "C♭"); break;
+            case -1: name = mscoreMajorVersion >= 4 ? qsTr("F♭♭") : qsTranslate("InspectorAmbitus", "F♭♭"); break;
+            case  0: name = mscoreMajorVersion >= 4 ? qsTr("C♭♭") : qsTranslate("InspectorAmbitus", "C♭♭"); break;
+            case  1: name = mscoreMajorVersion >= 4 ? qsTr("G♭♭") : qsTranslate("InspectorAmbitus", "G♭♭"); break;
+            case  2: name = mscoreMajorVersion >= 4 ? qsTr("D♭♭") : qsTranslate("InspectorAmbitus", "D♭♭"); break;
+            case  3: name = mscoreMajorVersion >= 4 ? qsTr("A♭♭") : qsTranslate("InspectorAmbitus", "A♭♭"); break;
+            case  4: name = mscoreMajorVersion >= 4 ? qsTr("E♭♭") : qsTranslate("InspectorAmbitus", "E♭♭"); break;
+            case  5: name = mscoreMajorVersion >= 4 ? qsTr("B♭♭") : qsTranslate("InspectorAmbitus", "B♭♭"); break;
 
-            case  8: name = qsTranslate("InspectorAmbitus", "G♭"); break;
-            case  9: name = qsTranslate("InspectorAmbitus", "D♭"); break;
-            case 10: name = qsTranslate("InspectorAmbitus", "A♭"); break;
-            case 11: name = qsTranslate("InspectorAmbitus", "E♭"); break;
-            case 12: name = qsTranslate("InspectorAmbitus", "B♭"); break;
-            case 13: name = qsTranslate("InspectorAmbitus", "F"); break;
-            case 14: name = qsTranslate("InspectorAmbitus", "C"); break;
-            case 15: name = qsTranslate("InspectorAmbitus", "G"); break;
-            case 16: name = qsTranslate("InspectorAmbitus", "D"); break;
-            case 17: name = qsTranslate("InspectorAmbitus", "A"); break;
-            case 18: name = qsTranslate("InspectorAmbitus", "E"); break;
-            case 19: name = qsTranslate("InspectorAmbitus", "B"); break;
+            case  6: name = mscoreMajorVersion >= 4 ? qsTr("F♭") : qsTranslate("InspectorAmbitus", "F♭"); break;
+            case  7: name = mscoreMajorVersion >= 4 ? qsTr("C♭") : qsTranslate("InspectorAmbitus", "C♭"); break;
+            case  8: name = mscoreMajorVersion >= 4 ? qsTr("G♭") : qsTranslate("InspectorAmbitus", "G♭"); break;
+            case  9: name = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/instruments:db-piccolo traitName" : "InspectorAmbitus", "D♭"); break;
+            case 10: name = qsTranslate(mscoreMajorVersion >= 4 ? "EditPitchBase" : "InspectorAmbitus", "A♭"); break;
+            case 11: name = qsTranslate(mscoreMajorVersion >= 4 ? "EditPitchBase" : "InspectorAmbitus", "E♭"); break;
+            case 12: name = qsTranslate(mscoreMajorVersion >= 4 ? "EditPitchBase" : "InspectorAmbitus", "B♭"); break;
 
-            case 20: name = qsTranslate("InspectorAmbitus", "F♯"); break;
-            case 21: name = qsTranslate("InspectorAmbitus", "C♯"); break;
-            case 22: name = qsTranslate("InspectorAmbitus", "G♯"); break;
-            case 23: name = qsTranslate("InspectorAmbitus", "D♯"); break;
-            case 24: name = qsTranslate("InspectorAmbitus", "A♯"); break;
-            case 25: name = qsTranslate("InspectorAmbitus", "E♯"); break;
-            case 26: name = qsTranslate("InspectorAmbitus", "B♯"); break;
-            case 27: name = qsTranslate("InspectorAmbitus", "F♯♯"); break;
-            case 28: name = qsTranslate("InspectorAmbitus", "C♯♯"); break;
-            case 29: name = qsTranslate("InspectorAmbitus", "G♯♯"); break;
-            case 30: name = qsTranslate("InspectorAmbitus", "D♯♯"); break;
-            case 31: name = qsTranslate("InspectorAmbitus", "A♯♯"); break;
-            case 32: name = qsTranslate("InspectorAmbitus", "E♯♯"); break;
-            case 33: name = qsTranslate("InspectorAmbitus", "B♯♯"); break;
+            case 13: name = qsTranslate(mscoreMajorVersion >= 4 ? "global" : "InspectorAmbitus", "F"); break;
+            case 14: name = qsTranslate(mscoreMajorVersion >= 4 ? "global" : "InspectorAmbitus", "C"); break;
+            case 15: name = qsTranslate(mscoreMajorVersion >= 4 ? "global" : "InspectorAmbitus", "G"); break;
+            case 16: name = qsTranslate(mscoreMajorVersion >= 4 ? "global" : "InspectorAmbitus", "D"); break;
+            case 17: name = qsTranslate(mscoreMajorVersion >= 4 ? "global" : "InspectorAmbitus", "A"); break;
+            case 18: name = qsTranslate(mscoreMajorVersion >= 4 ? "global" : "InspectorAmbitus", "E"); break;
+            case 19: name = qsTranslate(mscoreMajorVersion >= 4 ? "global" : "InspectorAmbitus", "B"); break;
+
+            case 20: name = qsTranslate(mscoreMajorVersion >= 4 ? "global" : "InspectorAmbitus", "F♯"); break;
+            case 21: name = qsTranslate(mscoreMajorVersion >= 4 ? "global" : "InspectorAmbitus", "C♯"); break;
+            case 22: name = qsTranslate(mscoreMajorVersion >= 4 ? "global" : "InspectorAmbitus", "G♯"); break;
+            case 23: name = qsTranslate(mscoreMajorVersion >= 4 ? "global" : "InspectorAmbitus", "D♯"); break;
+            case 24: name = qsTranslate(mscoreMajorVersion >= 4 ? "global" : "InspectorAmbitus", "A♯"); break;
+            case 25: name = mscoreMajorVersion >= 4 ? qsTr("E♯") : qsTranslate("InspectorAmbitus", "E♯"); break;
+            case 26: name = mscoreMajorVersion >= 4 ? qsTr("B♯") : qsTranslate("InspectorAmbitus", "B♯"); break;
+
+            case 27: name = mscoreMajorVersion >= 4 ? qsTr("F♯♯") : qsTranslate("InspectorAmbitus", "F♯♯"); break;
+            case 28: name = mscoreMajorVersion >= 4 ? qsTr("C♯♯") : qsTranslate("InspectorAmbitus", "C♯♯"); break;
+            case 29: name = mscoreMajorVersion >= 4 ? qsTr("G♯♯") : qsTranslate("InspectorAmbitus", "G♯♯"); break;
+            case 30: name = mscoreMajorVersion >= 4 ? qsTr("D♯♯") : qsTranslate("InspectorAmbitus", "D♯♯"); break;
+            case 31: name = mscoreMajorVersion >= 4 ? qsTr("A♯♯") : qsTranslate("InspectorAmbitus", "A♯♯"); break;
+            case 32: name = mscoreMajorVersion >= 4 ? qsTr("E♯♯") : qsTranslate("InspectorAmbitus", "E♯♯"); break;
+            case 33: name = mscoreMajorVersion >= 4 ? qsTr("B♯♯") : qsTranslate("InspectorAmbitus", "B♯♯"); break;
             default: name = qsTr("?")   + text.text; break;
          } // end switch tpc
 
@@ -105,32 +107,32 @@ MuseScore {
          if (false) {
             switch (notes[i].userAccidental) {
                case  0: break;
-               case  1: text.text = qsTranslate("accidental", "Sharp") + text.text; break;
-               case  2: text.text = qsTranslate("accidental", "Flat") + text.text; break;
-               case  3: text.text = qsTranslate("accidental", "Double sharp") + text.text; break;
-               case  4: text.text = qsTranslate("accidental", "Double flat") + text.text; break;
-               case  5: text.text = qsTranslate("accidental", "Natural") + text.text; break;
-               case  6: text.text = qsTranslate("accidental", "Flat-slash") + text.text; break;
-               case  7: text.text = qsTranslate("accidental", "Flat-slash2") + text.text; break;
-               case  8: text.text = qsTranslate("accidental", "Mirrored-flat2") + text.text; break;
-               case  9: text.text = qsTranslate("accidental", "Mirrored-flat") + text.text; break;
-               case 10: text.text = qsTranslate("accidental", "Mirrored-flat-slash") + text.text; break;
-               case 11: text.text = qsTranslate("accidental", "Flat-flat-slash") + text.text; break;
-               case 12: text.text = qsTranslate("accidental", "Sharp-slash") + text.text; break;
-               case 13: text.text = qsTranslate("accidental", "Sharp-slash2") + text.text; break;
-               case 14: text.text = qsTranslate("accidental", "Sharp-slash3") + text.text; break;
-               case 15: text.text = qsTranslate("accidental", "Sharp-slash4") + text.text; break;
-               case 16: text.text = qsTranslate("accidental", "Sharp arrow up") + text.text; break;
-               case 17: text.text = qsTranslate("accidental", "Sharp arrow down") + text.text; break;
-               case 18: text.text = qsTranslate("accidental", "Sharp arrow both") + text.text; break;
-               case 19: text.text = qsTranslate("accidental", "Flat arrow up") + text.text; break;
-               case 20: text.text = qsTranslate("accidental", "Flat arrow down") + text.text; break;
-               case 21: text.text = qsTranslate("accidental", "Flat arrow both") + text.text; break;
-               case 22: text.text = qsTranslate("accidental", "Natural arrow down") + text.text; break;
-               case 23: text.text = qsTranslate("accidental", "Natural arrow up") + text.text; break;
-               case 24: text.text = qsTranslate("accidental", "Natural arrow both") + text.text; break;
-               case 25: text.text = qsTranslate("accidental", "Sori") + text.text; break;
-               case 26: text.text = qsTranslate("accidental", "Koron") + text.text; break;
+               case  1: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Sharp") + text.text; break;
+               case  2: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Flat") + text.text; break;
+               case  3: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Double sharp") + text.text; break;
+               case  4: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Double flat") + text.text; break;
+               case  5: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Natural") + text.text; break;
+               case  6: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Flat-slash") + text.text; break;
+               case  7: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Flat-slash2") + text.text; break;
+               case  8: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Mirrored-flat2") + text.text; break;
+               case  9: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Mirrored-flat") + text.text; break;
+               case 10: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Mirrored-flat-slash") + text.text; break;
+               case 11: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Flat-flat-slash") + text.text; break;
+               case 12: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Sharp-slash") + text.text; break;
+               case 13: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Sharp-slash2") + text.text; break;
+               case 14: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Sharp-slash3") + text.text; break;
+               case 15: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Sharp-slash4") + text.text; break;
+               case 16: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Sharp arrow up") + text.text; break;
+               case 17: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Sharp arrow down") + text.text; break;
+               case 18: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Sharp arrow both") + text.text; break;
+               case 19: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Flat arrow up") + text.text; break;
+               case 20: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Flat arrow down") + text.text; break;
+               case 21: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Flat arrow both") + text.text; break;
+               case 22: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Natural arrow down") + text.text; break;
+               case 23: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Natural arrow up") + text.text; break;
+               case 24: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Natural arrow both") + text.text; break;
+               case 25: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Sori") + text.text; break;
+               case 26: text.text = qsTranslate(mscoreMajorVersion >= 4 ? "engraving/sym" : "accidental", "Koron") + text.text; break;
                default: text.text = qsTr("?") + text.text; break;
             }  // end switch userAccidental
          }  // end if courtesy- and microtonal accidentals
