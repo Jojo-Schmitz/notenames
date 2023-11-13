@@ -247,6 +247,6 @@ MuseScore {
       } // end for staff
 
       curScore.endCmd()
-      quit();
+      (typeof(quit) === 'undefined' ? Qt.quit : quit)()
    } // end onRun
 }
