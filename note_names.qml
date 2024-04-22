@@ -171,19 +171,19 @@ MuseScore {
       var endStaff;
       var endTick;
       var fullScore = false;
-      cursor.rewind(1);
+      cursor.rewind(Cursor.SELECTION_START);
       if (!cursor.segment) { // no selection
          fullScore = true;
          startStaff = 0; // start with 1st staff
          endStaff  = curScore.nstaves - 1; // and end with last
       } else {
          startStaff = cursor.staffIdx;
-         cursor.rewind(2);
+         cursor.rewind(Cursor.SELECTION_END);
          if (cursor.tick === 0) {
             // this happens when the selection includes
             // the last measure of the score.
-            // rewind(2) goes behind the last segment (where
-            // there's none) and sets tick=0
+            // rewind(Cursor.SELECTION_END) goes behind the last segment
+            // (where there's none) and sets tick=0
             endTick = curScore.lastSegment.tick + 1;
          } else {
             endTick = cursor.tick;
@@ -194,12 +194,12 @@ MuseScore {
 
       for (var staff = startStaff; staff <= endStaff; staff++) {
          for (var voice = 0; voice < 4; voice++) {
-            cursor.rewind(1); // beginning of selection
+            cursor.rewind(Cursor.SELECTION_START); // beginning of selection
             cursor.voice    = voice;
             cursor.staffIdx = staff;
 
             if (fullScore)  // no selection
-               cursor.rewind(0); // beginning of score
+               cursor.rewind(Cursor.SCORE_START); // beginning of score
             while (cursor.segment && (fullScore || cursor.tick < endTick)) {
                if (cursor.element && cursor.element.type === Element.CHORD) {
                   var text = newElement(Element.STAFF_TEXT);      // Make a STAFF_TEXT
