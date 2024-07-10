@@ -19,7 +19,7 @@ import QtQuick 2.2
 import MuseScore 3.0
 
 MuseScore {
-   version: "4.0"
+   version: "4.4"
    description: "This plugin names notes as per your language setting"
    menuPath: "Plugins.Notes." + "Note Names"
 
@@ -27,9 +27,11 @@ MuseScore {
    property real fontSizeMini: 0.7;
 
    id: noteNames
-
+   //4.4 title: "Note Names"
+   //4.4 categoryCode: "composing-arranging-tools"
+   //4.4 thumbnailName: "note_names.png"
    Component.onCompleted : {
-      if (mscoreMajorVersion >= 4) {
+      if (mscoreMajorVersion >= 4 && mscoreMinorVersion <= 3) {
          noteNames.title = "Note Names"
          noteNames.categoryCode = "composing-arranging-tools"
          noteNames.thumbnailName = "note_names.png"
@@ -164,7 +166,7 @@ MuseScore {
    }
 
    onRun: {
-      curScore.startCmd()
+      curScore.startCmd();
 
       var cursor = curScore.newCursor();
       var startStaff;
@@ -246,7 +248,7 @@ MuseScore {
          } // end for voice
       } // end for staff
 
-      curScore.endCmd()
+      curScore.endCmd();
       (typeof(quit) === 'undefined' ? Qt.quit : quit)()
    } // end onRun
 }
