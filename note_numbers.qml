@@ -26,15 +26,15 @@ MuseScore {
    // Small note name size is fraction of the full font size.
    property real fontSizeMini: 0.7;
 
-   id: noteNames
-   //4.4 title: "Note Names"
+   id: noteNumbers
+   //4.4 title: "Note Numbers"
    //4.4 categoryCode: "composing-arranging-tools"
    //4.4 thumbnailName: "note_names.png"
    Component.onCompleted : {
       if (mscoreMajorVersion >= 4 && mscoreMinorVersion <= 3) {
-         noteNames.title = "Note Names"
-         noteNames.categoryCode = "composing-arranging-tools"
-         noteNames.thumbnailName = "note_names.png"
+         noteNumbers.title = "Note Numbers"
+         noteNumbers.categoryCode = "composing-arranging-tools"
+         noteNumbers.thumbnailName = "note_names.png"
       }
    }
 
