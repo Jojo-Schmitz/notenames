@@ -5,7 +5,7 @@
 //  Note Numbers Plugin (derived from the Note Names Plugin)
 //
 //  Copyright (C) 2012 Werner Schweer
-//  Copyright (C) 2013 - 2024 Joachim Schmitz
+//  Copyright (C) 2013 - 2025 Joachim Schmitz
 //  Copyright (C) 2014 Jörn Eichler
 //  Copyright (C) 2020 Johan Temmerman
 //
@@ -52,45 +52,45 @@ MuseScore {
          if (typeof notes[i].tpc === "undefined") // like for grace notes ?!?
             return
          switch (notes[i].tpc) {
-            case -1: name = "♭♭4"; // F♭♭
-            case  0: name = "♭♭1"; // C♭♭
-            case  1: name = "♭♭5"; // G♭♭
-            case  2: name = "♭♭2"; // D♭♭
-            case  3: name = "♭♭6"; // A♭♭
-            case  4: name = "♭♭3"; // E♭♭
-            case  5: name = "♭♭7"; // B♭♭
+            case -1: name = "♭♭4"; break; // F♭♭
+            case  0: name = "♭♭1"; break; // C♭♭
+            case  1: name = "♭♭5"; break; // G♭♭
+            case  2: name = "♭♭2"; break; // D♭♭
+            case  3: name = "♭♭6"; break; // A♭♭
+            case  4: name = "♭♭3"; break; // E♭♭
+            case  5: name = "♭♭7"; break; // B♭♭
 
-            case  6: name = "♭4"; // F♭
-            case  7: name = "♭1"; // C♭
-            case  8: name = "♭5"; // G♭
-            case  9: name = "♭2"; // D♭
-            case 10: name = "♭6"; // A♭
-            case 11: name = "♭4"; // E♭
-            case 12: name = "♭7"; // B♭
+            case  6: name = "♭4"; break; // F♭
+            case  7: name = "♭1"; break; // C♭
+            case  8: name = "♭5"; break; // G♭
+            case  9: name = "♭2"; break; // D♭
+            case 10: name = "♭6"; break; // A♭
+            case 11: name = "♭4"; break; // E♭
+            case 12: name = "♭7"; break; // B♭
 
-            case 13: name = "4"; // F
-            case 14: name = "1"; // C
-            case 15: name = "5"; // G
-            case 16: name = "2"; // D
-            case 17: name = "6"; // A
-            case 18: name = "3"; // E
-            case 19: name = "7"; // B
+            case 13: name = "4"; break; // F
+            case 14: name = "1"; break; // C
+            case 15: name = "5"; break; // G
+            case 16: name = "2"; break; // D
+            case 17: name = "6"; break; // A
+            case 18: name = "3"; break; // E
+            case 19: name = "7"; break; // B
 
-            case 20: name = "♯4"; // F♯
-            case 21: name = "♯1"; // C♯
-            case 22: name = "♯5"; // G♯
-            case 23: name = "♯2"; // D♯
-            case 24: name = "♯6"; // A♯
-            case 25: name = "♯3"; // E♯
-            case 26: name = "♯7"; // B♯
+            case 20: name = "♯4"; break; // F♯
+            case 21: name = "♯1"; break; // C♯
+            case 22: name = "♯5"; break; // G♯
+            case 23: name = "♯2"; break; // D♯
+            case 24: name = "♯6"; break; // A♯
+            case 25: name = "♯3"; break; // E♯
+            case 26: name = "♯7"; break; // B♯
 
-            case 27: name = "♯♯4"; // F♯♯
-            case 28: name = "♯♯1"; // C♯♯
-            case 29: name = "♯♯5"; // G♯♯
-            case 30: name = "♯♯2"; // D♯♯
-            case 31: name = "♯♯6"; // A♯♯
-            case 32: name = "♯♯3"; // E♯♯
-            case 33: name = "♯♯7"; // B♯♯
+            case 27: name = "♯♯4"; break; // F♯♯
+            case 28: name = "♯♯1"; break; // C♯♯
+            case 29: name = "♯♯5"; break; // G♯♯
+            case 30: name = "♯♯2"; break; // D♯♯
+            case 31: name = "♯♯6"; break; // A♯♯
+            case 32: name = "♯♯3"; break; // E♯♯
+            case 33: name = "♯♯7"; break; // B♯♯
             default: name = qsTr("?")   + text.text; break;
          } // end switch tpc
 
