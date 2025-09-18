@@ -65,7 +65,7 @@ MuseScore {
             case  8: name = "♭5"; break; // G♭
             case  9: name = "♭2"; break; // D♭
             case 10: name = "♭6"; break; // A♭
-            case 11: name = "♭4"; break; // E♭
+            case 11: name = "♭3"; break; // E♭
             case 12: name = "♭7"; break; // B♭
 
             case 13: name = "4"; break; // F
