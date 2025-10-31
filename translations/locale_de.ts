@@ -134,7 +134,7 @@
     <message>
         <location filename="../note_names.qml" line="59"/>
         <source>B♭♭</source>
-        <translation>Bes</translation>
+        <translation>Heses</translation>
     </message>
     <message>
         <location filename="../note_names.qml" line="61"/>
