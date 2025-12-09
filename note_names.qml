@@ -23,9 +23,6 @@ MuseScore {
    description: "This plugin names notes as per your language setting"
    menuPath: "Plugins.Notes." + "Note Names"
 
-   // Small note name size is fraction of the full font size.
-   property real fontSizeMini: 0.7;
-
    id: noteNames
    //4.4 title: "Note Names"
    //4.4 categoryCode: "composing-arranging-tools"
@@ -50,7 +47,7 @@ MuseScore {
          if (text.text) // only if text isn't empty
             text.text = sep + text.text;
          if (small)
-            text.fontSize *= fontSizeMini
+            text.fontSize *= curScore.style.value("graceNoteMag")
          if (typeof notes[i].tpc === "undefined") // like for grace notes ?!?
             return
          switch (notes[i].tpc) {
